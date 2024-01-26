@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+
+header {
+    background-color: #000080;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.logo {
+    display: flex; 
+    gap: 25px;
+    justify-content:center;
+}
+h1 {
+    margin-top: 30px;
+}
+
+nav {
+    margin: 0 auto;
+    padding: 10px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+main {
+    width: 95%; /* Limited width for the main content */
+    margin:  0 auto; /* Center the main content horizontally */
+    padding: 20px;
+
+}
+
+h2{
+    text-align: center;
+    font-family: oswald;
+    font-weight: 400;
+    color: grey;
+    word-spacing: 2px;
+}
+
+.card-one, .card-two {
+    display: grid;
+    border: 1px solid #C0C0C0;
+    margin: 20px 0;
+   
+
+}
+
+
+
+h3 {
+    background-color: #000080;
+    color: white;
+    margin: 0px;
+    padding: 10px;    
+    text-align: center;
+    height: 50px;
+}
+
+
+li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+
+p {
+text-align: center;
+padding: 10px;
+}
+
+footer {
+    background-color: #000080;
+    color:#fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Apply Flexbox to the navigation container for mobile view */
+@media screen and (max-width: 767px) {
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+
+    }
+
+    .navigation li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+
+}

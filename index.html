@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Nehikhare Efehi - WDD 230 - Web Frontend Development</title>
+        <meta name="description"
+        content="WDD 230, Nehikhare Efehi, Web Frontend Development course assignment portal.">
+        <meta name="author" content="Nehikhare Efehi">
+        <link rel="stylesheet" href="./styles/custom.css">
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/larger.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">  
+        <link rel="icon" href="/images/favne.ico">  <!--week 1 favicon update-->
+        <meta property="og:title" content="Nehikhare Efehi - WDD 230 - Web Frontend Development">
+        <meta property="og:url" content=" https://index.html">
+        <meta property="og:image" content="./images/nehis.jpg">
+        <meta property="og:type" content="website">
+    </head>
+     
+    <body>
+        <header class="header">
+           
+            <div class="logo">
+                <img src="./images/nehis.jpg" alt="logo" height="100"  width="100">
+                <h1> Nehikhare Efehi </h1>
+            </div>
+        </header>
+
+        
+        <!-- <button id="menu"></button> -->
+        <nav >
+            <ul class="navigation">
+                <li><a href="#" >Home</a></li>
+                <li><a href="/lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+                <li><a href="https://www.byui.edu/" target="_blank" rel="noopener 
+                noreferrer">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/rom/14/?"
+                target="_blank" rel="noopener noreferrer">Scripture</a></li>
+            </ul>
+        </nav>
+       
+        <main>
+            <h2>WDD 230: Web Frontend Development</h2>
+            <hr> 
+
+            <section class="card-one">
+                <h3>Learning Activities</h3>
+                <ul id="learning-activities">
+                    <!-- This list will be populated throughout 
+                        the course -->
+                    <li><a href="./lesson01/holygrail.html">Activity 1: Holy Layout </a> | <a href="https://codepen.io/Nehiz/pen/PoLONxB">JS Pen</a></li>
+                    <li><a href="">Activity 2: Media Query </a> | <a href="">Design Principles</a></li>
+                    <li><a href="">Activity 3:</a></li>
+                    <li><a href="">Activity 4: </a></li>
+                    <li><a href="">Activity 5: </a></li>
+                    <li><a href="">Activity 6: </a></li>
+                    <li><a href="">Activity 7: </a></li>
+                    <li><a href="">Activity 8: </a></li>
+                    <li><a href="">Activity 9: </a></li>
+                    <li><a href="">Activity 10: </a></li>
+                </ul>
+            </section>
+
+            <section class="card-two">
+                <h3>Information</h3>
+                <!-- Information placeholders about the weather, number of 
+                    visits to the page, etc. -->
+                <p> Abuja City, Nigeria </p>
+                <p> Weather : 35.5&deg;C &#9925; </p>
+                <p> Page Visits : 6 </p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span>  <br> 🎠 Nehikhare Efehi 🎠 <br> Abuja City, Nigeria</p>
+            <p id="lastModified"></p>
+        </footer>
+
+        <!-- JavaScript code to dynamically populate the year and 
+            last modified date -->
+            <script src="scripts/getdates.js"></script>
+    </body>
+</html>

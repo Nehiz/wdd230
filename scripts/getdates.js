@@ -1,3 +1,14 @@
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('show');
+	hamButton.classList.toggle('show');
+});
+
+
+
+
 const options = {year: 'numeric'}
 
 document.querySelector('#year').textContent = new Date().toLocaleDateString('pt-BR', options);

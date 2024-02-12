@@ -1,0 +1,415 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 15vh;
+    background-color:#003366;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 15%;
+}
+
+:where(.logo) :is(img){
+    height: 14vh;
+    background-color: white;
+}
+
+.headerTextLinks{
+    width: 85%;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+:where(.text) :is(h1){
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+:where(.text) :is(p){
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.links{
+   width: 80%;
+
+}
+
+nav{
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-family: Agency FB;
+}
+
+
+/* The Styling for the main section */
+
+main{
+    height: 200vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 75vh 1fr 1fr;
+
+}
+
+#image{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+
+}
+
+.abuja{
+    grid-column: span 2;
+    background-image: url("/lesson03/images/ACCI.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.member{
+    grid-column: span 1;
+    background-color: white;
+    margin: 10px;
+}
+
+.member button{
+    width: 20vw;
+    height: 5vh;
+    background-color: #003366;
+    border: 0px;
+    color: whitesmoke;
+    border-radius:1px;
+    font-family: Agency FB;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+
+.member button[type="submit"]{
+  margin-top: 8vh;
+  margin-left: 4vw;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.member button[type="submit"]:hover{
+    background-color: #003366e0;
+
+
+}
+
+form{
+    margin: 2rem;
+}
+
+::placeholder{
+    color: rgb(71, 71, 71);
+    font-family: monospace;
+}
+
+.member input{
+    width: 22vw;
+    height: 5vh;
+    padding-left: 0.3rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    border: 0px;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+  
+}
+
+
+/* The Styling for the Home section section */
+
+#home{
+    grid-column: span 2;
+    background-image: url("/lesson03/images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .layer{
+    width: 50vw;
+    height:50vh;
+    background-color:whitesmoke;
+}
+
+#home h2{
+    color: #333;
+    font-size: 2.1rem;
+    font-family: Agency FB;
+    padding: 1rem;
+}
+
+#home p{
+    color: #333;
+    font-size: 1.4rem;
+    font-family: Agency FB;
+    text-align: center;
+    word-spacing: 3px;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+#home a{
+    width: 20vw;
+    height: 5vh;
+    background-color:rgb(62, 61, 61);
+    font-family: Agency FB;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-left: 17vw;
+    padding: 0.8rem;
+    border-radius: 2rem;
+}
+
+#home a:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color:grey;
+}
+
+
+#home a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+/* The Styling for the news section section */
+
+#discover{
+    grid-column: span 1;
+   background-image: url("/lesson03/images/news.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#discover:hover {
+    background-color: rgba(0, 0, 0, 0.837);
+    cursor: pointer;
+}
+
+#discover .cover{
+    background-color: rgba(0, 0, 0, 0.374);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  
+
+}
+
+#discover .cover:hover{
+    background-color: rgba(0, 0, 0, 0.689);
+    cursor: pointer;
+}
+
+
+#discover a{
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: Agency FB;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+
+/* The Styling for the Directory section */
+
+#directory{
+    grid-column: span 1;
+    background-color: rgba(242, 239, 239, 0.646);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#directory:hover{
+    background-color: rgba(0, 0, 0, 0.511);
+    cursor: pointer;
+}
+
+#directory h2{
+    background-color: rgba(0, 0, 0, 0.271);
+    color: whitesmoke;
+    width: 98.5%;
+    padding-left: 0.5rem;
+    font-family: Agency FB;
+    font-size: 1.8rem;
+}
+
+#directory img{
+    position:relative;
+    top: 1vh;
+}
+
+#directory a{
+    padding-top: 5rem;
+}
+
+
+
+
+/* The Styling for the Mission Statement section */
+
+#about{
+    grid-column: span 1;
+    background-image: url("/lesson03/images/vission-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#about:hover{
+    background-color: rgba(0, 0, 0, 0.634);
+    cursor: pointer;
+}
+
+
+#about .cover{
+    background-color: rgba(94, 92, 92, 0.715);
+    width: 100%;
+    height: 100%;
+}
+
+
+#about a{
+    text-decoration: none;
+
+}
+
+#about a h2{
+    background-color: grey;
+    color: white;
+    width: 98.1%;
+    padding-left: 0.5rem;
+    font-family: Agency FB;
+    font-size: 1.8rem;
+}
+
+#about a p{
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 1rem;
+}
+
+
+/* The Styling for the Events section */
+
+#events{
+    grid-column: span 1;
+    background-image: url("/lesson03/images/calender-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#events:hover {
+    background-color: rgba(0, 0, 0, 0.511);
+    cursor: pointer;
+}
+
+#events .cover{
+    background-color: rgba(0, 0, 0, 0.56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+#events a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: Agency FB;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+
+
+/* The Styling for the Footer section */
+
+footer{
+    height: 35vh;
+    width: 100%;
+    background-color: #003366;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials p{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    font-family: Agency FB;
+    font-weight: 400;
+    color: white;
+}
+
+.footerLogo img{
+    background-color: white;
+}
+
+.addresses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+
+.address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.address svg, .addresses svg{
+    width: 5vw;
+    height: 5vh;
+}
+
+

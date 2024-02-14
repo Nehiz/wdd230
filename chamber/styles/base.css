@@ -1,0 +1,475 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+    height: 215vh;
+}
+
+#menu{
+    display: none;
+}
+
+
+.spotlight{
+    display: none;
+}
+
+.header{
+    background-color:rgb(108, 107, 107);
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+:where(.logo) :is(img){
+    height: 20vh;
+}
+
+nav{
+    width: 40%;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: calibri;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+li a:hover{
+    color:rgba(191, 174, 174, 0.826);
+    transition: all 0.5 ease 0s;
+}
+
+
+/* This is styling for the Main */
+
+main{
+    width: 100%;
+    height: 170vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:70vh 1fr 1fr;
+    row-gap: 1rem;
+
+}
+
+/* This is styling for the chamber Div */
+
+.chamber{
+    grid-column: span 3;
+    background-image: url("/chamber/images/chamber-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0rem 1rem;
+    border: 0px;
+    box-shadow: 1px 1px 5px 1px black ;
+}
+
+.chamber a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: Agency FB;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 15vw;
+    height: 8vh;
+    box-shadow: 2px 2px 20px 5px black; 
+    background-color:rgb(130, 123, 123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem ;
+    
+}
+
+.chamber a:hover{
+    background-color:rgba(128, 128, 128, 0.637);
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.549); 
+    font-weight: 400;
+    transition: all 1s ease 0s;
+    
+}
+
+/* This is styling for the Events Section */
+
+.events{
+    grid-column: span 2;
+    background-color: rgb(73, 72, 72);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0rem 1rem;
+}
+
+.events h2{
+    color: whitesmoke;
+    font-size: 2.8rem;
+    font-family: Agency FB;
+   
+}
+
+.events p{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    font-family: Agency FB;
+    font-weight: 600;
+    word-spacing: 4px;
+}
+
+.events a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: Agency FB;
+    text-decoration: none;
+    text-align: center;
+    width: 15vw;
+    height: 8vh;
+    box-shadow: 2px 2px 20px 5px black; 
+    background-color:rgb(130, 123, 123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events:hover{
+    background-color:  rgba(0, 0, 0, 0.47);
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+
+.events a:hover{
+     background-color:rgba(128, 128, 128, 0.637);
+     transition: all 1s ease 0s;
+}
+
+/* This is styling for the Weather Section */
+
+.weather{
+    grid-column: span 1;
+    background-color:  rgb(73, 72, 72);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0rem 1rem;
+}
+
+.weather h2{
+    color: whitesmoke;
+    font-size: 2.8rem;
+    font-family: Agency FB;
+   
+}
+
+.weather p{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    font-family: Agency FB;
+    font-weight: 600;
+    word-spacing: 4px;
+}
+
+.weather:hover{
+    background-color:  rgba(0, 0, 0, 0.47);
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+
+
+/* This is styling for the Fisrt Advert Section */
+
+.advertOne{
+    grid-column: span 1;
+    background-color: rgb(73, 72, 72);
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.47);
+    margin: 0rem 1rem;
+}
+
+.advertOne:hover{
+    background-color: rgba(0, 0, 0, 0.464);
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+:where(.heading) :is(svg){
+    width: 5vw;
+    height: 5vh;
+}
+
+:where(.heading) :is(h2){
+    font-size: 1.5rem;
+    font-family: Agency FB;
+    color: whitesmoke;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+}
+
+
+:where(.content) :is(p){
+    font-size: 1.5rem;
+    font-family: Agency FB;
+    color: whitesmoke;
+}
+
+:where(.content) :is(a){
+    font-size: 1.3rem;
+    font-family: Agency FB;
+    color:whitesmoke;
+    font-weight: 700;
+}
+
+
+
+/* This is styling for the Second Advert Section */
+
+.advertTwo{
+    grid-column: span 1;
+    background-color: rgb(73, 72, 72);
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.47);
+}
+
+.advertTwo:hover{
+    background-color: rgba(0, 0, 0, 0.464);
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+
+/* This is styling for the Third Advert Section */
+
+.advertThree{
+    grid-column: span 1;
+    background-color:  rgb(73, 72, 72);
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.47);
+    margin: 0rem 1rem;
+}
+.advertThree:hover{
+    background-color: rgba(0, 0, 0, 0.464);
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+
+
+
+
+/* This is styling for the Footer section */
+
+footer{
+    width: 100%;
+    height: 30vh;
+    margin-top: 1rem;
+    background-color:rgb(108, 107, 107);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+
+
+.addresses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.addresses p{
+    font-size: 1.5rem;
+    font-family: Agency FB;
+    padding: 0.5rem;
+    color: white;
+}
+
+.copywrite p{
+    padding-left: 3rem;
+    padding-top: 0.8rem;
+    font-size: 1.5rem;
+    color: white;
+    font-family: Agency FB;
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+    main{
+        width: 100%;
+        height: 270vh;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows:70vh 1fr 1fr 10vh 1fr 1fr 1fr;
+        row-gap: 1rem;
+    }
+    .chamber{
+        grid-column: span 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .chamber a{
+        margin: 1rem;
+        width: 35vw;
+    }
+
+    .events{
+        grid-column: span 1;
+      
+    }
+
+    .events h2{
+        color: whitesmoke;
+        font-size: 2.8rem;
+        font-family: Agency FB;
+       
+    }
+
+    .events p{
+        text-align: center;
+        color: whitesmoke;
+        font-size: 1rem;
+        font-family: Agency FB;
+        font-weight: 600;
+        word-spacing: 4px;
+    }
+
+    .events a{
+        width: 25vw;
+        height: 5vh;
+        font-size: 1.3rem;
+        margin: 1rem;
+        box-shadow: none;
+    }
+
+    .weather p{
+        font-size: 1.2rem;
+    }
+
+    .spotlight{
+        display: block;
+        text-align: center;
+        color: rgba(0, 0, 255, 0.479);
+        font-family: Agency FB;
+    }
+
+    .advertOne, .advertTwo, .advertThree{
+        box-shadow: none;
+    }
+
+    :where(.heading) :is(h2){
+        padding-left: 0.5rem;
+    }
+
+    .advertTwo{
+        margin: 0rem 1rem;
+    }
+
+    footer{
+        width: 100%;
+        height: 70vh;
+        margin-top: 1rem;
+        background-color:rgb(130, 123, 123);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .social img{
+        height: 15vh;
+    }
+
+
+
+    
+     #menu{
+        display: block;
+        font-size: 1.5rem;
+        border: 1px solid rgba(0,0,0,.3);
+        padding: 3px 7px 6px;
+        background-color:transparent;
+        color: #000;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+
+    #menu::before {
+        content: "☰";
+    }
+    #menu.show::before{ 
+        content: "X";
+    }
+
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+
+    }
+
+
+    .navigation li{
+        display: none;
+    }
+
+    .navigation li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+  
+
+}

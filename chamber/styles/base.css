@@ -71,7 +71,7 @@ main{
 
 .chamber{
     grid-column: span 3;
-    background-image: url("/chamber/images/chamber-logo.png");
+    background-image: url("../chamber/images/chamber-logo.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

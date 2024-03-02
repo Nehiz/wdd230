@@ -222,6 +222,27 @@ main{
     margin-bottom: 3rem;
 }
 
+#color a{
+    width: 20vw;
+    height: 5vh;
+    background-color:#fff;
+    font-family: lato;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color:black;
+}
+
+#color a:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color:#02203f;
+}
+
 /* The Styling for the Directory section */
 
 #directory{
@@ -265,6 +286,14 @@ main{
 
 }
 
+#directory h2{
+    position: absolute;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 2.1rem;
+    font-family: Montserrat;
+    padding: 1rem;
+}
 
 
 

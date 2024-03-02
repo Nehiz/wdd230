@@ -130,7 +130,7 @@ main{
 
 #home{
     grid-column: span 2;
-    background-image: url("/lesson03/images/home.jpg");
+    background-image: url("./lesson03/images/home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

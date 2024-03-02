@@ -204,12 +204,14 @@ main{
 }
 
 #color ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.879);
 }
-#color ul li{
-    list-style-type: decimal;
-    padding: 0.5rem;
+#color li{
+    margin-bottom: 8px;
 }
 
 #color p{

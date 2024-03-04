@@ -486,3 +486,34 @@ footer{
   
 
 }
+
+
+@media screen and (max-width: 430px) {
+
+    :where(.logo) :is(img){
+        height: 10vh;
+        margin-left: 2vw;
+    }
+
+    .socials a svg{
+        height: 4vh;
+    }
+
+    .addresses p{
+        font-size: 1.2rem;
+        font-family: Agency FB;
+        padding: 0.5rem;
+        color: white;
+    }
+    
+    .copywrite p{
+        padding-left: 3rem;
+        padding-top: 0.8rem;
+        font-size: 1.2rem;
+        color: white;
+        font-family: Agency FB;
+    
+    
+    }
+
+}

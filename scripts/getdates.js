@@ -11,7 +11,6 @@ hamButton.addEventListener('click', () => {
 });
 
 
-
 const modeButton = document.querySelector("#mode");
 const Body = document.querySelector("body");
 

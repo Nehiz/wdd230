@@ -2,8 +2,12 @@ const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('show');
-	hamButton.classList.toggle('show');
+	if(navigation.style.display === 'none' ) {
+        navigation.style.display = 'block';
+        
+    } else{
+        navigation.style.display = 'none';
+    }
 });
 
 

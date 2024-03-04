@@ -51,7 +51,6 @@ li a{
 
 li a:hover{
     color:rgba(191, 174, 174, 0.826);
-    transition: all 0.5 ease 0s;
 }
 
 

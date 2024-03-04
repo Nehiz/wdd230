@@ -12,6 +12,11 @@ body{
     display: none;
 }
 
+#mode:hover{
+    cursor: pointer;
+    
+}
+
 
 .spotlight{
     display: none;

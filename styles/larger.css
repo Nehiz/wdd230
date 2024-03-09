@@ -77,8 +77,8 @@
         padding: 1rem 1rem;
     }
 
-    .heroLabel h2{
-        text-wrap: nowrap;
+    .heroLabel p{
+        white-space: nowrap;
         color: black;
     }
 

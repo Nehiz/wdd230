@@ -71,21 +71,37 @@ main{
 
 }
 
+
+
+
 /* This is styling for the chamber Div */
 
 .chamber{
     grid-column: span 3;
-    background-image: url("../images/chamber-logo.png");
+    /* background-image: url("../images/chamber-logo.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-size: contain; */
+    /* background-position: center;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start; */
     margin: 0rem 1rem;
     border: 0px;
     box-shadow: 1px 1px 5px 1px black ;
 }
+
+.hero{
+    width: 100%;
+    height: 50vh;
+}
+
+.hero img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+
 
 .chamber a{
     color: whitesmoke;

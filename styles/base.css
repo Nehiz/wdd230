@@ -58,6 +58,8 @@ main {
 
 }
 
+
+
 h2{
     text-align: center;
     font-family: oswald;
@@ -113,8 +115,33 @@ footer {
 
     nav{
         padding: 0px;
+ 
         /* border: 1px solid rgb(128, 113, 0); */
     
+    }
+
+    
+    .hero img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+       
+    }
+
+
+
+    .heroLabel{
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
+        background-color: #fff;
+        border: 1px solid black;
+        padding: 1rem 1rem;
+    }
+
+    .heroLabel h2{
+        text-wrap: nowrap;
+        color: black;
     }
 
     #menu{

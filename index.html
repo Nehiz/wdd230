@@ -2,21 +2,31 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Nehikhare Efehi - WDD 230 - Web Frontend Development.</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">       
+        <title>Nehikhare Efehi - WDD 230 - Web Frontend Development Course Home Page.</title>
         <meta name="description"
-        content="This is the template for updating links to the subsequent assignment files in the WDD 230 - Web Frontend Development course.">
+        content="This is the course home page for updating links to the subsequent assignment files in the WDD 230 - Web Frontend Development course.">
         <meta name="author" content="Nehikhare Efehi">
-        <link rel="stylesheet" href="./styles/normalize.css">
-        <link rel="stylesheet" href="./styles/base.css">
-        <link rel="stylesheet" href="./styles/larger.css">
+
+        <!--favicon-->
+        <link rel="icon" href="./images/favn.ico"> 
+
+        <!-- Link to the font stylesheet -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="icon" href="./images/favn.ico">  <!--week 1 favicon update-->
-        <meta property="og:title" content="Nehikhare Efehi - WDD 230 - Web Frontend Development">
-        <meta property="og:url" content=" https://index.html">
-        <meta property="og:image" content="https://i0.wp.com/autojosh.com/wp-content/uploads/2018/11/Benin-Artwork-at-Ring-Road-12.jpg?w=600&ssl=1">
+         
+        <!-- Meta Social Media - Facebook Open Graph -->
         <meta property="og:type" content="website">
+        <meta property="og:url" content=" https://nehiz.github.io/wdd230/index.html">
+        <meta property="og:title" content="Nehikhare Efehi - WDD 230 - Web Frontend Development Course Home Page">
+        <meta property="og:image" content="https://nehiz.github.io/wdd230/images/nehis.webp">
+        
+        <!-- External CSS file references -->
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/larger.css"> 
+        
+       
     </head>
      
     <body>
@@ -46,8 +56,10 @@
         <main>
             <div class="hero">
                 <picture>
-                    <source srcset="/images/landscape.webp" media="(max-width:400px)">
-                    <img src="/images/aba-nigeria-temple.jpg" alt="" srcset="">
+                    <source srcset="/images/hero-small.webp" media="(max-width: 400px)">
+                    <source srcset="/images/hero-large.webp" media="(max-width: 960px) and (orientation: landscape)">
+                    <img src="./lesson/images/hero-large.webp" alt="My Favorite Temple">
+                    <!-- <div class="overlay">Aba Temple</div> -->
                 </picture>
             </div>
 

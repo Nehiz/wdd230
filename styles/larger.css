@@ -46,6 +46,28 @@
        
     }
 
+    /*
+
+     Another rule for Absolute Positioning and Overlay
+
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);  this willcenter the absolutely positioned element within its containing parent, irrespective of its size.  
+        background-color: #fff;
+        border: 1px solid black;
+        padding: 1rem 1rem;
+        font-size: 20px;
+        text-align: center;
+        pointer-events: none;  This ensures the overlay does not interfer with the clickable elements on the page. This will allow the user to clickable 
+    } 
+
+    */
+
+
+    
+
     .heroLabel{
         position: absolute;
         top: 50vh;
@@ -59,6 +81,9 @@
         text-wrap: nowrap;
         color: black;
     }
+
+    
+
 
     h2 {
         text-align:left;

@@ -63,11 +63,23 @@
             <div class="chamber">
                 <div class="hero">
                     <picture>
-                        <source>
-                        <source>
-                        <img src="/chamber/images/wdd230-org.jpg" alt="">
+                        <source srcset="/chamber/images/hero-small.webp" media="(max-width: 400px)">
+                        <source srcset="/chamber/images/hero-medium.webp" media="(max-width: 960px)">
+                        <img src="/chamber/images/hero-large.webp" alt="hero">
                     </picture>
                 </div> 
+
+                <div class="hero-label small">
+                    <h2>SMALL</h2>
+                </div>
+
+                <div class="hero-label medium">
+                    <h2>MEDIUM</h2>
+                </div>
+
+                <div class="hero-label large">
+                    <h2>LARGE</h2>
+                </div>
 
                 <!-- <a href="#" target="_blank" rel="noopener noreferrer">
                     Join The Chamber
@@ -95,9 +107,9 @@
                 </h2>
 
                 <p> Abuja City, Nigeria </p>
-                <p> Weather : 35.5&deg;C &#9925; </p>
-                <p>Humidity: 35% </p>
-                <p>Wind Chill: N/A</p>
+                <p id="temperature"> Temperature : 35.5&deg;C &#9925; </p>
+                <p id="windSpeed">WindSpeed: 3 </p>
+                <p id="windChill">Wind Chill: N/A</p>
 
 
             </section>
@@ -233,6 +245,7 @@
     
             
         </footer>
+        <script src="scripts/windchill.js"></script>
         <script src="../scripts/getdates.js"></script>
 
     </body>

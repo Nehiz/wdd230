@@ -30,7 +30,6 @@
     main {
         width: 95%;
         min-height: 200vh;
-        border: 1px solid red;
         display: grid;
         grid-template-columns: 30vw 1fr;
         grid-template-rows: 1fr;

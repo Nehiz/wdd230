@@ -21,8 +21,10 @@ let numVisits = Number(window.localStorage.getItem('numVisits-Is')) || 0;
 
 if(numVisits!== 0){
 	visitsDisplay.textContent = numVisits;
+} else if (numVisits == 1) {
+	visitsDisplay.textContent = `Welcome! Let us know if you have any questions.` ;
 } else {
-	visitsDisplay.textContent = `This is your first visit!  🥳 Welcome!` ;
+    visitsDisplay.textContent = `You last visited ${numVisits} days ago.` ;
 }
 
 // incrrement on the number of visits

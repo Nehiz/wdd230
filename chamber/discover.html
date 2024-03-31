@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">       
+        <title>Nehikhare Efehi - WDD 230 - Web Frontend Development Course Home Page.</title>
+        <meta name="description"
+        content="The WDD 230 - Web Frontend Development course homepage is dedicated to updating links for assignments and files.">
+        <meta name="author" content="Nehikhare Efehi">
+
+        <!--favicon-->
+        <link rel="icon" href="./images/favn.ico"> 
+
+        <!-- Link to the font stylesheet -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         
+        <!-- Meta Social Media - Facebook Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://nehiz.github.io/wdd230">
+        <meta property="og:title" content="Nehikhare Efehi - WDD 230 - Web Frontend Development Course Home Page">
+        <meta property="og:image" content="https://nehiz.github.io/wdd230/images/nehis.webp">
+
+        <!-- External CSS file references -->
+        <link rel="stylesheet" href="../styles/base.css">
+        <link rel="stylesheet" href="../styles/larger.css">
+        <link rel="stylesheet" href="../styles/normalize.css"> 
+        
+       
+    </head>
+     
+    <body>
+      
+        <header class="header">
+            <div class="logo">
+                <img src="../images/nehis.webp" alt="logo" height="100"  width="100">
+                <h1> Nehikhare Efehi </h1>
+            </div>
+            
+        </header>
+
+        
+        <button id="menu"></button>
+        <nav >
+            <ul class="navigation">
+                <li><a href="#" >Home</a></li>
+                <li><a href="./lesson03/chamber-site-plan.html">Chamber-Site Plan</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+                <li><a href="https://www.byui.edu/" target="_blank" rel="noopener 
+                noreferrer">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/rom/14/?"
+                target="_blank" rel="noopener noreferrer">Scripture</a></li>
+            </ul>
+        </nav>
+       
+        <main>
+            <aside class="sidebar layout">
+
+                <div class="Demography">
+                    <h1>
+                        Demographics of Nigeria
+                    </h1>
+
+                    <img src="../lesson/images/demograghic.jpeg"  alt="">
+
+                </div>
+
+                <div class="Event">
+                    <h1>Independence Day In Nigeria </h1>
+                    <img src="../lesson/images/in.jpeg"  alt="independence">
+                    <p>Independence Day, known colloquially as October First, is an official national holiday in Nigeria, celebrated on the 1st of October. It marks Nigeria's proclamation of independence from British rule on 1 October 1960. </p>
+
+                </div>
+
+                <div class="Attractions">
+                    <h1>Eko Tourist Beach Resort</h1>
+                    <p>Lagos has so many beaches but most are rowdy and don't afford privacy, intimacy and exclusivity. Seeking an alternative to all that rowdiness? Here is the perfect place to enjoy your getaway time in a peaceful and tranquil location.</p>
+                    <p>Also known as Akodo Beach, this is a privately managed beach that provides fun seekers and picnickers an alternative to the hustle and bustle of conventional beaches. With a view to provide guests and organizations with an affordable recreational place where they can think through ideas, review strategies, unwind, meditate and relax, it offers premium comfort and relaxation. The resort has an amusement park, clinic, private security and other sporting facilities such as snooker, boat riding, archery, beach football, table tennis, quad biking etc. Apart from the long stretch of beach off the coast of Atlantic, there is also a well-maintained swimming pool for the younger ones.</p>
+
+                </div>
+
+                <div class="StatisticaData">
+                  <h2> Urban Population: % of Total Population from 1960 to 2017 in the chart:</h2>
+                    <img src="../lesson/images/statistic.svg" alt="" srcset="">
+                </div>
+
+                <div class="Calender">
+                    <h1>Nigeria Democracy Day</h1>
+                    <img src="../lesson/images/calender.jpeg" alt="">
+
+                </div>
+
+                <div class="Place">
+                    <h1>The Capital City of Nigeria</h1>
+                    <img src="../lesson/images/capital city.jpeg" alt="">
+                </div>
+
+            </aside>
+
+            <div class="imageGallary layout">
+
+                <img src="../lesson/images/img-one.jpg" alt="" loading="lazy" width="100%" height="495" class="imageLayoutOne">
+                <img src="../lesson/images/img-two.jpg" alt="" loading="lazy" width="100%" height="418" class="imageLayoutTwo">
+                <img src="../lesson/images/img-three.jpg" alt="" loading="lazy" width="100%" height="418" class="imageLayoutTwo">
+                <img src="../lesson/images/img-four.jpg" alt="" loading="lazy"  width="100%" height="495" class="imageLayoutOne">
+                <img src="../lesson/images/img-five.jpg" alt="" loading="lazy" width="100%" height="418"  class="imageLayoutTwo">
+                <img src="../lesson/images/img-six.jpg" alt="" loading="lazy" width="100%" height="418" class="imageLayoutTwo">
+
+                
+                
+            </div>
+           
+        </main>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span>  <br> 🎠 Nehikhare Efehi 🎠 <br> Abuja City, Nigeria</p>
+            <p id="lastModified"></p>
+            <p> Page Visits :  <span class="visits"></span> </p>
+        </footer>
+
+        <!-- JavaScript code to dynamically populate the year and 
+            last modified date -->
+            <script src="../scripts/getdates.js"></script>
+    </body>
+</html>

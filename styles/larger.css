@@ -28,14 +28,174 @@
 
     /* Widen the main content area for larger screens */
     main {
-        width: 90%;
+        width: 95%;
+        min-height: 200vh;
+        border: 1px solid red;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100vh 50px 2px 1fr 1fr;
-        gap: 10px;
+        grid-template-columns: 30vw 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 1vw;
+
     }
 
-    .hero{
+    .sidebar{
+        grid-column: span 1;
+        border: 1px solid black;
+
+    }
+
+    .imageGallary{
+        grid-column: span 1 ;
+        border: 1px solid black;
+    }
+
+    .imageGallary img:hover{
+        cursor: pointer;
+        box-shadow: 2px 2px 10px  black;
+    }
+
+    .layout{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 10vh 1fr 1fr 1fr 10vh 1fr 1fr;
+        row-gap: 1vh;
+
+    }
+
+    .Demography{
+        grid-column: span 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    .Demography img{
+        width: 90%;
+        height: 50%;    
+    }
+
+    .Demography h1{
+        font-family: Gabriola;
+        font-size: 2em;
+        color:rgb(61, 60, 60);
+    }
+
+    .Event{
+        grid-column: span 1;
+        grid-row: span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    .Event h1{
+        font-family: Gabriola;
+        font-size: 2em;
+        color:rgb(61, 60, 60);
+    }
+
+    .Event img{
+        width: 90%;
+        height: 50%;
+    }
+
+    .Attractions{
+        grid-column: span 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    .Attractions h1{
+        font-family: oswald;
+        font-size: 1.3em;
+        color: rgb(79, 75, 75);
+    }
+
+    .Attractions p{
+        font-size: 0.9em;
+       
+    }
+    
+    .StatisticaData{
+        grid-column: span 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    .StatisticaData img{
+        width: 90%;
+        height: 50%;    
+
+    }
+
+    
+   .Calender{
+    grid-column: span 1;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+    }
+
+    .Calender h1{
+        font-family: Gabriola;
+        font-size: 2.5em;
+        color:rgb(61, 60, 60);
+    }
+
+    .Calender img{
+        width: 60%;
+        height: 50%;   
+    }
+
+    .Place {
+        grid-column: span 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    .Place h1{
+        font-family: Gabriola;
+        font-size: 2.5em;
+        color:rgb(61, 60, 60);
+    }
+
+    .Place img{
+        width: 80%;
+        height: 70%;   
+    }
+    
+
+    .imageLayoutOne{
+        grid-column: span 1;
+        grid-row: span 2;
+
+    }
+
+    .imageLayoutTwo{
+        grid-column: span 1;
+
+    }
+
+
+
+    /* .hero{
         grid-column: span 3;
     }
 
@@ -44,7 +204,7 @@
         height: 100vh;
         object-fit: cover;
        
-    }
+    } */
 
     /*
 
@@ -68,7 +228,7 @@
 
     
 
-    .heroLabel{
+    /* .heroLabel{
         position: absolute;
         top: 50vh;
         left: 20vw;
@@ -94,7 +254,7 @@
        grid-column:span 3;
        background-color: black;
        width: 100%;
-    }
+    } */
 
     
     /* Adjust the margin for the header and footer for better spacing */

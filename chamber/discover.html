@@ -2,57 +2,64 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">       
-        <title>The Chamber Website Discover Page.</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Abuja Chamber of Commerce</title>
         <meta name="description"
-        content="The WDD 230 - Web Frontend Development course homepage is dedicated to updating links for assignments and files.">
+        content="Abuja chamber of commerce aim to connect, inspire, and advance members to a vibrant and thriving business ecosystem.">
         <meta name="author" content="Nehikhare Efehi">
-
-        <!--favicon-->
-        <link rel="icon" href="./images/favn.ico"> 
-
-        <!-- Link to the font stylesheet -->
+        <link rel="icon" href="images/favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         
-        <!-- Meta Social Media - Facebook Open Graph -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"> 
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://nehiz.github.io/wdd230">
-        <meta property="og:title" content="Nehikhare Efehi - WDD 230 - Web Frontend Development Course Home Page">
-        <meta property="og:image" content="https://nehiz.github.io/wdd230/images/nehis.webp">
-
-        <!-- External CSS file references -->
-        <link rel="stylesheet" href="../styles/base.css">
-        <link rel="stylesheet" href="../styles/larger.css">
-        <link rel="stylesheet" href="../styles/normalize.css"> 
+        <meta property="og:url" content="https://nehiz.github.io/wdd230/chamber">
+        <meta property="og:title" content="The Abuja Chamber of Commerce Home Page">
+        <meta property="og:image" content="https://nehiz.github.io/wdd230/chamber/images/logo.webp">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
         
-       
     </head>
      
     <body>
-      
+
         <header class="header">
+           
             <div class="logo">
-                <img src="../images/nehis.webp" alt="logo" height="100"  width="100">
-                <h1> Nehikhare Efehi </h1>
+                <img src="images/Logo.jpg" alt="Logo of the abuja chamber of commerce" >
             </div>
-            
+
+
+            <div class="socials">
+
+                <a href="#">
+                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg>
+                </a>
+
+                <a href="#">
+                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg>
+                </a>
+
+            </div>
+
+            <button id="menu"  aria-label="Hambuger"></button>
+            <div id="mode">
+                🕶️
+            </div>
+
+            <nav >
+                <ul class="navigation">
+                    <li><a href="#" >Home</a></li>
+                    <li><a href="#">Discover </a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </nav>
+
         </header>
 
-        
-        <button id="menu"></button>
-        <nav >
-            <ul class="navigation">
-                <li><a href="#" >Home</a></li>
-                <li><a href="./lesson03/chamber-site-plan.html">Chamber-Site Plan</a></li>
-                <li><a href="chamber/">Chamber</a></li>
-                <li><a href="https://www.byui.edu/" target="_blank" rel="noopener 
-                noreferrer">BYU-Idaho</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/rom/14/?"
-                target="_blank" rel="noopener noreferrer">Scripture</a></li>
-            </ul>
-        </nav>
-       
+ 
+
         <main>
             <aside class="sidebar layout">
 
@@ -98,27 +105,55 @@
 
             <div class="imageGallary layout">
 
-                <img src="../lesson/images/img-one.jpg" alt="" loading="lazy" width="100%" height="495" class="imageLayoutOne">
-                <img src="../lesson/images/img-two.jpg" alt="" loading="lazy" width="100%" height="418" class="imageLayoutTwo">
-                <img src="../lesson/images/img-three.jpg" alt="" loading="lazy" width="100%" height="418" class="imageLayoutTwo">
-                <img src="../lesson/images/img-four.jpg" alt="" loading="lazy"  width="100%" height="495" class="imageLayoutOne">
-                <img src="../lesson/images/img-five.jpg" alt="" loading="lazy" width="100%" height="418"  class="imageLayoutTwo">
-                <img src="../lesson/images/img-six.jpg" alt="" loading="lazy" width="100%" height="418" class="imageLayoutTwo">
+                <img src="images/img-one.webp" alt="" loading="lazy" width="100%" height="495" class="imageLayoutOne">
+                <img src="images/img-two.webp" alt="" loading="lazy" width="100%" height="418" class="imageLayoutTwo">
+                <img src="images/img-three.webp" alt="" loading="lazy" width="100%" height="418" class="imageLayoutTwo">
+                <img src="images/img-four.webp" alt="" loading="lazy"  width="100%" height="495" class="imageLayoutOne">
+                <img src="images/img-five.webp" alt="" loading="lazy" width="100%" height="418"  class="imageLayoutTwo">
+                <img src="images/img-six.webp" alt="" loading="lazy" width="100%" height="418" class="imageLayoutTwo">
 
-                
-                
             </div>
-           
+
         </main>
+        
 
-        <footer class="footer">
-            <p>&copy; <span id="year"></span>  <br> 🎠 Nehikhare Efehi 🎠 <br> Abuja City, Nigeria</p>
-            <p id="lastModified"></p>
-            <!-- <p> Page Visits :  <span class="visits"></span> </p> -->
+        <footer>
+            <div class="social">
+                <img src="images/Logo.jpg" alt="Logo of Chamber of Commerce">
+    
+                <div class="name">
+                    <div class="addresses">
+                        <p>Block 12 Zone 3, Edo</p>
+    
+                    </div>
+    
+                    <div class="addresses">
+                            <p>+2348038835457</p>
+    
+                    </div>
+    
+                    
+                    <div class="copywrite">
+                        <p>&copy; <span id="year"></span>   🎠 Nehikhare Efehi 🎠  Abuja City, Nigeria</p>
+                        <p id="lastModified"></p>
+                
+                    </div>
+                
+    
+                </div>
+    
+            </div>
+    
+            <iframe  title="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2568509048415!2d5.538154974130432!3d6.229830226508121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040cfe1b3942b59%3A0x2ca38c72c14f5086!2sAbuja%20Chamber%20Of%20Commerce%20%26%20Industry!5e0!3m2!1sen!2sng!4v1699713593670!5m2!1sen!2sng"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    
+    
+            
         </footer>
+        <script src="/chamber/scripts/windchill.js"></script>
+        <script src="/chamber/scripts/mode.js"></script>
 
-        <!-- JavaScript code to dynamically populate the year and 
-            last modified date -->
-            <script src="../scripts/getdates.js"></script>
     </body>
+
+    
 </html>

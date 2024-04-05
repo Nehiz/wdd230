@@ -12,19 +12,19 @@ hamButton.addEventListener('click', () => {
 
 
 
-// thsis is the scripting for the page visits
 
-
+        //    this is the scripting to get number of page visits
+        
 const visitsDisplay = document.querySelector('.visits');
 
 let numVisits = Number(window.localStorage.getItem('numVisits-Is')) || 0;
 
 if(numVisits!== 0){
-	visitsDisplay.textContent = numVisits;
+	visitsDisplay.textContent = `You last visited ${numVisits} days ago.`;
 } else if (numVisits == 1) {
 	visitsDisplay.textContent = `Welcome! Let us know if you have any questions.` ;
 } else {
-    visitsDisplay.textContent = `You last visited ${numVisits} days ago.` ;
+    visitsDisplay.textContent = `Back so soon! Awesome!` ;
 }
 
 // incrrement on the number of visits

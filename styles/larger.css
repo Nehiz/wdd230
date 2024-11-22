@@ -1,0 +1,91 @@
+/* Larger Screens Styling (for devices wider than 600px) */
+@media (min-width: 601px) {
+    /* Navigation - Adjust layout to evenly distribute items */
+    nav ul {
+      flex-direction: row;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 100%; /* Make nav take full width */
+      background-color: #333; /* Optional styling */
+    }
+  
+    nav a {
+      flex-grow: 1; /* Ensure each link grows evenly */
+      text-align: center; /* Center text in each link */
+      padding: 0.5rem 0; /* Add padding for clickable space */
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+    }
+  
+    /* Main Section - Two-column layout for larger screens */
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr; /* Two columns with Learning Activities wider */
+      gap: 1rem; /* Space between grid items */
+      max-width: 1200px; /* Limit maximum width */
+      margin: 0 auto; /* Center content */
+    }
+  
+    /* Center h1 above both cards */
+    main h1 {
+      grid-column: 1 / -1; /* Span across both columns */
+      text-align: left; /* Center the text */
+      font-size: 1.5rem;
+      color: #333;
+      position: relative; /* Allow for pseudo-element styling */
+    }
+  
+    /* Horizontal line under h1 */
+    main h1::after {
+      content: "";
+      position: absolute;
+      bottom: -10px; /* Position below the text */
+      left: 0;
+      width: 100%; /* Stretch across entire grid */
+      height: 2px;
+      background-color: #333; /* Horizontal line color */
+    }
+  
+    /* Learning Activities card spans two columns  */
+ 
+  
+    /* Information card */
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Footer - Adjust layout for larger screens */
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center text horizontally */
+      justify-content: center; /* Center text vertically */
+      padding: 1rem;
+      background-color:#1f456e; /* Optional background color */
+      color: #fff; /* Text color */
+      text-align: center; /* Center align text */
+    }
+  
+    footer p {
+        margin: 0.5rem 0; /* Add vertical spacing between paragraphs */
+        font-size: 1rem; /* Adjust font size as needed */
+      }
+      .name{
+        padding: 0 1rem;
+      }
+      
+      #copyright{
+        display: flex;
+        flex-direction: row;
+      }
+
+      #lastModification {
+        font-size: 0.9rem; /* Smaller font size for last modification */
+      }
+  }
+  

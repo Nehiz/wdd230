@@ -1,0 +1,203 @@
+/* Universal Font and  General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f456e;
+    padding: 1rem;
+    color: #fff;
+}
+
+header img {
+    margin-right: 1rem; /* Space between image and name */
+    width: 75px;
+    height: 100px;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    background-color: #cf4040;
+    display: flex; /* Use Flexbox for layout */
+    align-items: center;
+    justify-content: center; /* Center navigation links */
+    margin-bottom: 0rem; /* Ensure space between nav and main */
+
+    
+ 
+}
+
+
+nav > ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*stoppped editing here*/
+nav ul li{
+    padding: .5rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+nav ul li:hover{
+    background-color: #c1b8b8;
+}
+
+nav ul li a {
+    padding: .5rem 1rem;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+/* Highlight the active link */
+nav ul li.active {
+    background-color: #c47f3d;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: .5rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card ul {
+    padding: 1rem;
+    list-style-type: none; /* Removes the bullet points */
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;  /* Adds some spacing between list items */
+}
+
+.card a {
+    font-size: 1rem;
+    color: #333; /* Sets link color */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.card ul li a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    color: #c47f3d; /* Changes color on hover */
+}
+
+main h1 {
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
+    padding: 0rem .5rem;
+    /* text-align: left; */
+}
+
+/* Add horizontal line under the h1 */
+main h1::after {
+    content: ""; /* Create the pseudo-element */
+    display: block; /* Make it behave like a block-level element */
+    width: 100%; /* Line spans half the width of the container */
+    height: 1px; /* Thickness of the line */
+    background-color: #333; /* Line color */
+    margin: 0.rem auto; /* Center the line with vertical spacing */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #1f456e; /* Match header color */
+    border-radius: 4px 4px 0 0; /* Optional: Adds rounded corners for consistency */
+    color: #fff;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+
+.card p {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #1f456e;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #copyright {
+    margin-bottom: 0.5rem;
+}
+
+footer #copyright span.name {
+    font-weight: bold;
+}
+
+footer #lastModification {
+    margin-top: 0.5rem;
+    color: #f4d03f; /* Yellow color for the last modification text */
+    font-weight: bold;
+}
+
+/* Unicorn emoji styling */
+footer span.name::after {
+    content: " 🦄"; /* Appends a unicorn emoji to your name */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    footer {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}

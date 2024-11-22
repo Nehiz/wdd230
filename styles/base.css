@@ -139,7 +139,7 @@ main h1::after {
     width: 100%; /* Line spans half the width of the container */
     height: 1px; /* Thickness of the line */
     background-color: #333; /* Line color */
-    margin: 0.rem auto; /* Center the line with vertical spacing */
+    margin: 0.5rem auto; /* Center the line with vertical spacing */
 }
 
 .card h2 {

@@ -7,7 +7,7 @@
       margin: 0;
       list-style: none;
       width: 100%; /* Make nav take full width */
-      background-color: #333; /* Optional styling */
+      background-color: #000; /* Optional styling */
     }
   
     nav a {
@@ -33,7 +33,6 @@
       grid-column: 1 / -1; /* Span across both columns */
       text-align: left; /* Center the text */
       font-size: 1.5rem;
-      color: #333;
       position: relative; /* Allow for pseudo-element styling */
     }
   
@@ -45,16 +44,14 @@
       left: 0;
       width: 100%; /* Stretch across entire grid */
       height: 2px;
-      background-color: #333; /* Horizontal line color */
+      background-color: #000; /* Horizontal line color */
     }
   
     /* Learning Activities card spans two columns  */
- 
-  
+
     /* Information card */
     .card {
       background-color: #fff;
-      border: 1px solid #ddd;
       border-radius: 0.5rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }

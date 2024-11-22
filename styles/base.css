@@ -11,7 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: #000;
 }
 
 /* Header Section */
@@ -38,7 +38,7 @@ header span {
 nav {
     width: 100%;
     height: 100%;
-    background-color: #333;
+    background-color: #000;
     display: flex; /* Flexbox for layout of */
     align-items: center;
     justify-content: center; /* Center navigation links in mo*/
@@ -50,7 +50,7 @@ nav ul{
     list-style: none;
     width: 100%;
     height: 100%;
-    background-color: #333;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +66,8 @@ nav ul li{
     text-align: center;
 }
 nav ul li:hover{
-    background-color: #c1b8b8;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 nav ul li a {
@@ -80,7 +81,7 @@ nav ul li a {
 
 /* Highlight the active link */
 nav ul li.active {
-    background-color: #c47f3d;
+    background-color: #4d2703;
     font-weight: bold;
 }
 
@@ -97,7 +98,6 @@ main {
 .card {
     background-color: #ffffff;
     border-radius: 0.5rem;
-    border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -112,7 +112,7 @@ main {
 
 .card a {
     font-size: 1rem;
-    color: #333;
+    color: #000; /* Sets link color */
     text-decoration: none; /* Removes underline from links */
 }
 
@@ -124,7 +124,7 @@ main {
 main h1 {
     font-size: 1rem;
     text-align: center;
-    color: #333;
+    color: #000;
     padding: 0rem 0.5rem;
 }
 
@@ -134,7 +134,7 @@ main h1::after {
     display: block; /* Make it behave like a block-level element */
     width: 100%; /* Line spans half the width of the container */
     height: 1px; /* Thickness of the line */
-    background-color: #333; /* Line color */
+    background-color: #000; /* Line color */
     margin: 0.5rem auto; /* Center the line with vertical spacing */
 }
 
@@ -145,10 +145,10 @@ main h1::after {
     text-align: center;
     font-weight: bold;
     background-color: #1f456e; /* Match header color */
-    border-radius: 4px 4px 0 0; /* Optional: Adds rounded corners for consistency */
+    border-radius: 4px 4px 0 0;
     color: #fff;
     margin-bottom: 0.5rem;
-    box-sizing: border-box; /* Ensures padding is included in width */
+    box-sizing: border-box;
 }
 
 
@@ -168,8 +168,6 @@ footer {
 footer p {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 footer #copyright {
@@ -182,8 +180,7 @@ footer #copyright span.name {
 
 footer #lastModification {
     margin-top: 0.5rem;
-    color: #f4d03f; /* Yellow color for the last modification text */
-    font-weight: bold;
+    color: #e7d79b; /* Yellow color for the last modification text */
 }
 
 /* Unicorn emoji styling */

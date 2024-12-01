@@ -1,164 +1,162 @@
-/* Universal Font and  General Reset */
- * {
-    font-family: 'Poppins', sans-serif;
+/* Universal Font and General Reset */
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
+}
 
- html, body {
-    height: 100%;
-    width: 100%;
- }
-
- body {  
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+html {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
     background-color: #f4f4f4;
     color: #000;
- }
+    display: flex;
+    flex-direction: column;
+}
+
+/* Global Reusable Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+button,
+a {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+a:hover {
+    opacity: 0.8;
+}
 
 /* Header Section */
- header {
+header {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1f456e;
     padding: 1rem;
     color: #fff;
- }
+}
 
- header img {
-    margin-right: 1rem; /* Space between image and name */
+header img {
+    margin-right: 1rem;
     width: 75px;
     height: 100px;
- }
+}
 
- header span {
+header span {
     font-size: 1.5rem;
     font-weight: bold;
- }
+}
 
 /* Navigation Links */
- nav {
-    width: 100%;
-    background-color: #000;
-    display: flex; /* Flexbox for layout of content */
-    align-items: center;
-    justify-content: center; 
- }
-
- nav ul{
-    list-style: none;
+nav {
     width: 100%;
     background-color: #000;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 0;
- }
-
- nav ul li{
-    width: 100%;
-    text-align: center;
- }
-
- nav ul li:hover{
-    text-decoration: underline;
-    font-weight: bold;
-    cursor: pointer;
+    justify-content: center;
 }
 
- nav ul li a {
-    padding: 0.5rem;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
- }
-
- /* Highlight the active link */
- nav ul li.active {
-    background-color: #4d2703;
-    font-weight: bold;
- }
-
-  /* Hide nav-list by default in mobile view */
-#nav-list {
-    display: none;
+nav ul {
+    list-style: none;
+    display: flex;
     flex-direction: column;
-    background-color: #000; /* Optional: Match your nav background */
+    align-items: center;
     padding: 0;
     margin: 0;
 }
 
-/* Show nav-list when active */
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    padding: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li:hover,
+nav ul li.active {
+    background-color: #4d2703;
+    font-weight: bold;
+}
+
+@media (min-width: 601px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+#nav-list {
+    display: none;
+    flex-direction: column;
+}
+
 #nav-list.active {
     display: flex;
 }
 
-/* Always show nav-list in larger viewports */
 @media (min-width: 601px) {
     #nav-list {
         display: flex;
         flex-direction: row;
     }
- }
- 
- /* Hamburger Button */
- #hamburger {
+}
+
+/* Hamburger Menu */
+#hamburger {
     display: none;
     background: none;
     border: none;
     color: #fff;
     font-size: 2rem;
     cursor: pointer;
- }
+}
 
- #hamburger-icon {
-    display: none; /* Not needed since we're using #hamburger */
- }
+@media (max-width: 600px) {
+    #hamburger {
+        display: block;
+    }
 
+    nav ul {
+        width: 100%;
+    }
 
- /* Main Content */
- main {
-    flex-grow: 1; 
+    #nav-list {
+        display: none;
+    }
+
+    #nav-list.active {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 2rem;
     max-width: 600px;
     margin: 0 auto;
- }
+}
 
- .card {
-    background-color: #ffffff;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- }
-
- .card ul {
-    padding: 1rem;
-    list-style-type: none; 
- }
-
- .card ul li {
-    margin-bottom: 0.5rem; 
- }
-
- .card a {
-    font-size: 1rem;
-    color: #000; 
-    text-decoration: none; 
- }
-
- .card ul li a:hover {
-    text-decoration: underline; 
-    color: #c47f3d; 
- }
 main h1 {
     font-size: 1rem;
     text-align: center;
@@ -176,29 +174,55 @@ main h1::after {
     margin: 0.5rem auto; 
 }
 
+
+.card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .card h2 {
     font-size: 1.5rem;
-    padding: 0.5rem;
     text-align: center;
     font-weight: bold;
-    background-color: #1f456e; /* Match header color */
+    background-color: #1f456e;
     color: #fff;
     margin-bottom: 0.5rem;
     border-radius: 4px 4px 0 0;
+    padding: 0.5rem;
 }
-
 
 .card p {
     margin: 1rem 0;
     text-align: center;
 }
 
+.card ul {
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.card ul li a {
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+    color: #c47f3d;
+}
+
+/* Footer */
 footer {
     flex-shrink: 0;
     background-color: #1f456e;
     color: #fff;
     padding: 1rem;
-    font-size: 1rem;
     text-align: center;
 }
 
@@ -209,9 +233,6 @@ footer p {
 
 footer #copyright {
     margin-bottom: 0.5rem;
-}
-
-footer #copyright span.name {
     font-weight: bold;
 }
 
@@ -220,62 +241,13 @@ footer #lastModification {
     color: #e7d79b;
 }
 
-/* Unicorn emoji styling */
 footer span.name::after {
-    content: " 🦄"; /* Appends a unicorn emoji to your name */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-    footer {
-        font-size: 1.2rem;
-    }
-
-    #hamburger {
-        display: block;  /* Show hamburger in mobile view */
-    }
-    
-    #nav-links {
-        display: none;
-        flex-direction: column;
-    }
-    
-    nav ul {
-        width: 100%;
-    }
-
-    #nav-links.active {
-        display: flex;
-    }
+    content: " 🦄";
 }
 
 /* Dark Mode Styles */
-
-.dark-mode-toggle {
-    margin: 1rem 0; 
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; 
-    padding-left: 1rem;
-}
-
-.dark-mode-toggle label {
-    font-size: 1rem;
-    color: #000; 
-}
-
-.dark-mode-toggle input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
 body.dark-mode {
     background-color: #121212;
-    color: #fff;
-}
-
-body.dark-mode h1 {
     color: #fff;
 }
 
@@ -292,4 +264,23 @@ body.dark-mode .card {
 
 body.dark-mode .card a {
     color: #fff;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dark-mode-toggle label {
+    font-size: 1rem;
+    color: #000;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }

@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://nehiz.github.io/wdd230/">
 
     <!-- Stylesheets and Fonts --> 
-    <link rel="stylesheet" href="styles/normalize.css">  
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/nehis.ico">
@@ -25,28 +25,39 @@
 </head>
     
 <body>
-    
-    <!--Header Section-->
+    <!-- Header Section with Profile Image -->
     <header class="profile">
         <img src="images/profile.jpg" alt="Nehikhare Efehi" width="75" height="100">
-        <span class ="name">Nehikhare Efehi</span>
+        <span class="name">Nehikhare Efehi</span>
     </header>
     
-    <!-- Navigation Links-->
+
+    <!-- Navigation Links -->
     <nav>
-        <ul>
-            <li class="active"><a href="#" >Home</a></li>
-            <li><a href="#">Chamber</a></li>S
+        <button id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        <ul id="nav-list">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="#">Form</a></li>
         </ul>
+        <!-- Hamburger Icon for Mobile -->
+        <div id="hamburger-icon" class="hamburger">
+            &#9776;
+        </div>
     </nav>
-   
-    <!-- Main content-->
+
+        <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <label for="darkModeSwitch">Dark Mode</label>
+        <input type="checkbox" id="darkModeSwitch">
+    </div>
+
+    <!-- Main Content -->
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
 
-        <!-- Learning Activities Section-->
+        <!-- Learning Activities Section -->
         <section class="card">
             <h2>Learning Activities</h2>
             <ul>
@@ -54,14 +65,14 @@
                 <li>Week 02: <a href="week02/design.html"> Design Principles</a> |
                     <a href="https://codepen.io/Nehiz/pen/MYgwwya" target="_blank">CodePen</a> |
                     <a href="week02/bom.html">Book of Mormon Top 10 Application</a></li>
-                <li>Week 03: <a href="#"></a></li>
-                <li>Week 04: <a href="#"></a></li>
-                <li>Week 05: <a href="#"></a></li>
-                <li>Week 06: <a href="#"></a></li>
+                    <li>Week 03: <a href="#"></a></li>
+                    <li>Week 04: <a href="#"></a></li>
+                    <li>Week 05: <a href="#"></a></li>
+                    <li>Week 06: <a href="#"></a></li>
             </ul>
         </section>
 
-        <!-- Information Section-->
+        <!-- Information Section -->
         <section class="card">
             <h2>Information</h2>
             <p>Benin City, Nigeria</p>
@@ -69,11 +80,13 @@
             <p>Page Visits: 10</p>
         </section>
     </main>
+
+    <!-- Footer Section -->
     <footer>
-        <p id ="copyright">
-           <span id="year">&copy;</span>
-             <span class="name">Nehikhare Efehi</span>
-             <span class="country">Nigeria 🇳🇬</span>
+        <p id="copyright">
+            <span id="year">&copy;</span>
+            <span class="name">Nehikhare Efehi</span>
+            <span class="country">Nigeria 🇳🇬</span>
         </p>
         <p id="lastModification">
             <strong>Last Updated: <span id="date"></span></strong>
@@ -81,5 +94,7 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 </html>

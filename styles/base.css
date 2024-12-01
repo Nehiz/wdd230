@@ -1,126 +1,164 @@
 /* Universal Font and  General Reset */
-
-* {
+ * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+ }
 
-body {  
+ html, body {
+    height: 100%;
+    width: 100%;
+ }
+
+ body {  
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #000;
-}
+ }
 
 /* Header Section */
-header {
+ header {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1f456e;
     padding: 1rem;
     color: #fff;
-}
+ }
 
-header img {
+ header img {
     margin-right: 1rem; /* Space between image and name */
     width: 75px;
     height: 100px;
-}
+ }
 
-header span {
+ header span {
     font-size: 1.5rem;
     font-weight: bold;
-}
+ }
 
-nav {
+/* Navigation Links */
+ nav {
     width: 100%;
-    height: 100%;
     background-color: #000;
-    display: flex; /* Flexbox for layout of */
+    display: flex; /* Flexbox for layout of content */
     align-items: center;
-    justify-content: center; /* Center navigation links in mo*/
-    margin-bottom: 0rem;
-}
+    justify-content: center; 
+ }
 
-
-nav ul{
+ nav ul{
     list-style: none;
     width: 100%;
-    height: 100%;
     background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 0;
+ }
 
-}
-
-/*stoppped editing here*/
-nav ul li{
-    padding: 0.5rem;
+ nav ul li{
     width: 100%;
-    height: 100%;
     text-align: center;
-}
-nav ul li:hover{
+ }
+
+ nav ul li:hover{
     text-decoration: underline;
     font-weight: bold;
+    cursor: pointer;
 }
 
-nav ul li a {
-    padding: 0.5rem 1rem;
+ nav ul li a {
+    padding: 0.5rem;
     text-align: center;
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
+ }
 
-}
-
-/* Highlight the active link */
-nav ul li.active {
+ /* Highlight the active link */
+ nav ul li.active {
     background-color: #4d2703;
     font-weight: bold;
+ }
+
+  /* Hide nav-list by default in mobile view */
+#nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #000; /* Optional: Match your nav background */
+    padding: 0;
+    margin: 0;
 }
 
-/* Main Content */
-main {
+/* Show nav-list when active */
+#nav-list.active {
+    display: flex;
+}
+
+/* Always show nav-list in larger viewports */
+@media (min-width: 601px) {
+    #nav-list {
+        display: flex;
+        flex-direction: row;
+    }
+ }
+ 
+ /* Hamburger Button */
+ #hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+ }
+
+ #hamburger-icon {
+    display: none; /* Not needed since we're using #hamburger */
+ }
+
+
+ /* Main Content */
+ main {
+    flex-grow: 1; 
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 2rem;
     max-width: 600px;
     margin: 0 auto;
-}
+ }
 
-.card {
+ .card {
     background-color: #ffffff;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+ }
 
-.card ul {
+ .card ul {
     padding: 1rem;
-    list-style-type: none; /* Removes the bullet points */
-}
+    list-style-type: none; 
+ }
 
-.card ul li {
-    margin-bottom: 0.5rem;  /* Adds some spacing between list items */
-}
+ .card ul li {
+    margin-bottom: 0.5rem; 
+ }
 
-.card a {
+ .card a {
     font-size: 1rem;
-    color: #000; /* Sets link color */
-    text-decoration: none; /* Removes underline from links */
-}
+    color: #000; 
+    text-decoration: none; 
+ }
 
-.card ul li a:hover {
-    text-decoration: underline; /* Adds underline on hover */
-    color: #c47f3d; /* Changes color on hover */
-}
-
+ .card ul li a:hover {
+    text-decoration: underline; 
+    color: #c47f3d; 
+ }
 main h1 {
     font-size: 1rem;
     text-align: center;
@@ -130,25 +168,23 @@ main h1 {
 
 /* Add horizontal line under the h1 */
 main h1::after {
-    content: ""; /* Create the pseudo-element */
-    display: block; /* Make it behave like a block-level element */
-    width: 100%; /* Line spans half the width of the container */
-    height: 1px; /* Thickness of the line */
-    background-color: #000; /* Line color */
-    margin: 0.5rem auto; /* Center the line with vertical spacing */
+    content: ""; 
+    display: block; 
+    width: 100%; 
+    height: 1px; 
+    background-color: #000;
+    margin: 0.5rem auto; 
 }
 
 .card h2 {
     font-size: 1.5rem;
     padding: 0.5rem;
-    width: 100%;
     text-align: center;
     font-weight: bold;
     background-color: #1f456e; /* Match header color */
-    border-radius: 4px 4px 0 0;
     color: #fff;
     margin-bottom: 0.5rem;
-    box-sizing: border-box;
+    border-radius: 4px 4px 0 0;
 }
 
 
@@ -158,6 +194,7 @@ main h1::after {
 }
 
 footer {
+    flex-shrink: 0;
     background-color: #1f456e;
     color: #fff;
     padding: 1rem;
@@ -180,7 +217,7 @@ footer #copyright span.name {
 
 footer #lastModification {
     margin-top: 0.5rem;
-    color: #e7d79b; /* Yellow color for the last modification text */
+    color: #e7d79b;
 }
 
 /* Unicorn emoji styling */
@@ -191,6 +228,68 @@ footer span.name::after {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {
     footer {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        font-size: 1.2rem;
     }
+
+    #hamburger {
+        display: block;  /* Show hamburger in mobile view */
+    }
+    
+    #nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    
+    nav ul {
+        width: 100%;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+}
+
+/* Dark Mode Styles */
+
+.dark-mode-toggle {
+    margin: 1rem 0; 
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    padding-left: 1rem;
+}
+
+.dark-mode-toggle label {
+    font-size: 1rem;
+    color: #000; 
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode h1 {
+    color: #fff;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode .card {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .card a {
+    color: #fff;
 }

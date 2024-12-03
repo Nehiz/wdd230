@@ -112,14 +112,12 @@ nav ul li.active {
     }
 }
 
-
-
 #hamburger {
-    display: none;
+    display: none; /* Hidden on larger screens */
     background: none;
     border: none;
-    color: #fff;
     font-size: 2rem;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -142,6 +140,31 @@ nav ul li.active {
     }
 }
 
+#hamburger::before {
+    content: "";  /* Default Hamburger icon */
+}
+
+#hamburger.open::before {
+    content: "✖"; /* Change icon when active */
+    font-size: 1rem;
+}
+
+@media (min-width: 601px) {
+    #hamburger {
+        display: none; /* Hide hamburger button */
+    }
+
+    #nav-list {
+        display: flex; /* Always show navigation items */
+        flex-direction: row;
+        position: static; /* Regular flow */
+        background: none; /* Remove background */
+    }
+
+    #hamburger.open {
+        color: #fff; /* Ensure visibility when menu is open */
+    }
+}
 
 main {
     flex-grow: 1;

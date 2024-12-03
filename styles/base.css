@@ -33,6 +33,11 @@ a {
     transition: all 0.3s ease;
 }
 
+a {
+    color: #fff; /* Standard link color */
+    text-decoration: none;
+}
+
 button:hover,
 a:hover {
     opacity: 0.8;
@@ -45,7 +50,7 @@ header {
     justify-content: center;
     background-color: #1f456e;
     padding: 1rem;
-    color: #fff;
+    color: #f8f8f8;
 }
 
 header img {
@@ -221,7 +226,7 @@ main h1::after {
 footer {
     flex-shrink: 0;
     background-color: #1f456e;
-    color: #fff;
+    color: #f8f8f8;
     padding: 1rem;
     text-align: center;
 }
@@ -238,7 +243,7 @@ footer #copyright {
 
 footer #lastModification {
     margin-top: 0.5rem;
-    color: #e7d79b;
+    color: #FFD700;
 }
 
 footer span.name::after {
@@ -257,6 +262,10 @@ body.dark-mode footer {
     background-color: #222;
 }
 
+body.dark-mode main h1 {
+    color: #FFFFFF; /* Bright white for excellent visibility */
+}
+
 body.dark-mode .card {
     background-color: #333;
     color: #fff;
@@ -265,6 +274,10 @@ body.dark-mode .card {
 body.dark-mode .card a {
     color: #fff;
 }
+
+body.dark-mode span#date {
+    background-color: #222; /* Dark mode background */
+    color: #D1D1D1; /* Light gray for high contrast (dark mode) */
 
 /* Dark Mode Toggle */
 .dark-mode-toggle {
@@ -283,4 +296,12 @@ body.dark-mode .card a {
     width: 20px;
     height: 20px;
     cursor: pointer;
+}
+
+.dark-mode .hamburger-icon {
+    color: #FFFFFF; /* Bright icon color for dark backgrounds */
+}
+
+.dark-mode .hamburger-icon:hover {
+    color: #F0F0F0; /* Slightly dimmed for hover effect */
 }

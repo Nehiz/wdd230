@@ -1,4 +1,4 @@
-/* Universal Font and General Reset */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -20,21 +20,20 @@ body {
     flex-direction: column;
 }
 
-/* Global Reusable Styles */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
 }
 
-button,
-a {
+button, a {
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 a {
-    color: #fff; /* Standard link color */
+    color: #fff; 
     text-decoration: none;
 }
 
@@ -43,7 +42,7 @@ a:hover {
     opacity: 0.8;
 }
 
-/* Header Section */
+
 header {
     display: flex;
     align-items: center;
@@ -64,7 +63,7 @@ header span {
     font-weight: bold;
 }
 
-/* Navigation Links */
+
 nav {
     width: 100%;
     background-color: #000;
@@ -114,7 +113,7 @@ nav ul li.active {
 }
 
 
-/* Hamburger Menu */
+
 #hamburger {
     display: none;
     background: none;
@@ -143,7 +142,7 @@ nav ul li.active {
     }
 }
 
-/* Main Content */
+
 main {
     flex-grow: 1;
     display: grid;
@@ -161,7 +160,7 @@ main h1 {
     padding: 0rem 0.5rem;
 }
 
-/* Add horizontal line under the h1 */
+
 main h1::after {
     content: ""; 
     display: block; 
@@ -243,7 +242,6 @@ footer span.name::after {
 }
 
 
-/* Dark Mode Styles */
 body.dark-mode {
     background-color: #121212;
     color: #fff;
@@ -256,7 +254,7 @@ body.dark-mode footer {
 }
 
 body.dark-mode main h1 {
-    color: #FFFFFF; /* Bright white for excellent visibility */
+    color: #FFFFFF; 
 }
 
 body.dark-mode .card {
@@ -271,8 +269,8 @@ body.dark-mode .card a {
 body.dark-mode span#date {
     background-color: #222; /* Dark mode background */
     color: #D1D1D1; /* Light gray for high contrast (dark mode) */
+}
 
-/* Dark Mode Toggle */
 .dark-mode-toggle {
     margin: 1rem 0;
     display: flex;
@@ -289,6 +287,14 @@ body.dark-mode span#date {
     width: 20px;
     height: 20px;
     cursor: pointer;
+}
+
+.dark-mode .dark-mode-toggle label {
+    color: #D1D1D1; /* Light gray for dark mode */
+}
+
+.dark-mode .dark-mode-toggle input[type="checkbox"] {
+    border: 1px solid #D1D1D1;
 }
 
 .dark-mode .hamburger-icon {

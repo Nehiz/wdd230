@@ -113,7 +113,7 @@ nav ul li.active {
 }
 
 #hamburger {
-    display: none; /* Hidden on larger screens */
+    display: block; /* Hidden on larger screens */
     background: none;
     border: none;
     font-size: 2rem;

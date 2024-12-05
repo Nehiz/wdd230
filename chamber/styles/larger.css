@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+    #nav-list {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .spotlights {
+        display: flex;
+        justify-content: space-around;
+    }
+}

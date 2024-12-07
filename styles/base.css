@@ -113,7 +113,7 @@ nav ul li.active {
 }
 
 #hamburger {
-    display: block; /* Hidden on larger screens */
+    display: block; 
     background: none;
     border: none;
     font-size: 2rem;
@@ -141,30 +141,57 @@ nav ul li.active {
 }
 
 #hamburger::before {
-    content: "";  /* Default Hamburger icon */
+    content: "";  
 }
 
 #hamburger.open::before {
-    content: "✖"; /* Change icon when active */
+    content: "✖"; 
     font-size: 1rem;
 }
 
 @media (min-width: 601px) {
     #hamburger {
-        display: none; /* Hide hamburger button */
+        display: none; 
     }
 
     #nav-list {
-        display: flex; /* Always show navigation items */
+        display: flex; 
         flex-direction: row;
-        position: static; /* Regular flow */
-        background: none; /* Remove background */
+        position: static; 
+        background: none; 
     }
 
     #hamburger.open {
-        color: #fff; /* Ensure visibility when menu is open */
+        color: #fff; 
     }
 }
+
+.hero-image-container {
+    position: relative;
+    width: 100%; 
+    max-width: 870px;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  
+  .hero-image-container img {
+    display: block;
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .overlay-label {
+    position: absolute;
+    bottom: auto;
+    top: 50px; 
+    left: 40px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 10px 15px; 
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+  
 
 main {
     flex-grow: 1;
@@ -192,7 +219,6 @@ main h1::after {
     background-color: #000;
     margin: 0.5rem auto; 
 }
-
 
 .card {
     background-color: #fff;
@@ -234,6 +260,31 @@ main h1::after {
 .card ul li a:hover {
     text-decoration: underline;
     color: #c47f3d;
+}
+
+.google-map {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 870px; 
+    height: 450px; 
+    margin-bottom: 30px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .google-map {
+        height: 300px;
+    }
 }
 
 footer {

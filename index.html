@@ -48,8 +48,20 @@
         <input type="checkbox" id="darkModeSwitch">
     </div>
 
+    <div class="hero-image-container">
+        <pictu
+          <source srcset="images/aba-temple-mobile.webp" media="(max-width: 400px)">
+          <source srcset="images/aba-temple-desktop.webp" media="(min-width: 401px) and (max-width: 960px)">
+          <img src="images/aba-temple-desktop.jpg" alt="Aba Nigeria Temple" width="399" height="250">
+        </picture>
+        <div class="overlay-label">
+            <p>Aba Nigeria Temple</p>
+        </div>
+    </div>
     <!-- Main Content -->
     <main>
+        
+          
         <h1>WDD 230: Web Frontend Development</h1>
 
         <!-- Learning Activities Section -->
@@ -72,9 +84,22 @@
             <h2>Information</h2>
             <p>Benin City, Nigeria</p>
             <p>25°C - Sunny 🌞</p>
-            <p>Page Visits: 10</p>
+            <p>Page Visits: <span id="visit-counter">0</span></p>
         </section>
+
     </main>
+
+    <!--Google Map -->
+    <section class="google-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=..."
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
 
     <!-- Footer Section -->
     <footer>
@@ -91,5 +116,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/pageVisitCounter.js"></script>
 </body>
 </html>

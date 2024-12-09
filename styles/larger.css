@@ -67,6 +67,78 @@
   }
 
 
-  
+  body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+  }
+
+  body.dark-mode header,
+  body.dark-mode nav,
+  body.dark-mode footer {
+  background-color: #222;
+  }
+
+  body.dark-mode main h1 {
+    color: #FFFFFF; 
+  }
+
+  body.dark-mode .card {
+    background-color: #333;
+    color: #fff;
+  }
+
+  body.dark-mode .card a {
+    color: #fff;
+  }
+
+  body.dark-mode span#date {
+    background-color: #222; /* Dark mode background */
+    color: #D1D1D1; /* Light gray for high contrast (dark mode) */
+  }
+
+  .dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right:20px;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .dark-mode-toggle label {
+    font-size: 1rem;
+    color: #000;
+  }
+
+  .dark-mode-toggle input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+
+  .dark-mode .dark-mode-toggle input[type="checkbox"] {
+    border: 1px solid #D1D1D1;
+  }
+
+  .dark-mode .hamburger-icon {
+    color: #FFFFFF; /* Bright icon color for dark backgrounds */
+  }
+
+  .dark-mode .hamburger-icon:hover {
+    color: #F0F0F0; /* Slightly dimmed for hover effect */
+  }
+
 }
+
+
+@media (max-width: 600px) {
+  .dark-mode-toggle {
+      display: none;
+  }
+}
+
 

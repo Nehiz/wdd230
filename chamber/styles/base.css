@@ -543,6 +543,10 @@ figcaption {
     .photo-gallery img:hover {
       transform: scale(1.05); /* Zoom effect */
     }
+
+    .sidebar-section img:hover {
+        transform: scale(1.05); /* Zoom effect */
+      }
   }
   
   

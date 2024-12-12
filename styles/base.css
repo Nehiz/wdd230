@@ -264,6 +264,14 @@ main h1::after {
     color: #c47f3d;
 }
 
+.card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
 .google-map {
     position: relative;
     background-color: #121212;

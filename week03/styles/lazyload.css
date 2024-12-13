@@ -67,11 +67,10 @@
   }
   
 footer {
-  margin-top: 20px;
   width: 100%;
   background-color: #1f456e;
   color: #fff;
-  padding: 1rem;
+  padding: 20px;
   text-align: center;
 }
 

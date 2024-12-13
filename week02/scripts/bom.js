@@ -3,58 +3,36 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-// Declare the chaptersArray and initialize with the data from localStorage, if available
-let chaptersArray = getChapterList() || []; // If no chapters, initialize as empty array
-
-// Populate the displayed list with chapters on page load
-chaptersArray.forEach((chapter) => displayList(chapter));
-
-// Button click event listener to handle adding new chapters
+// Add a click event listener to the button
 button.addEventListener('click', () => {
-    if (input.value.trim() !== '') { // Check if input is not empty
-        const chapter = input.value.trim(); // Get the input value
-        displayList(chapter); // Call displayList to show the chapter
-        chaptersArray.push(chapter); // Add the chapter to the array
-        setChapterList(); // Update localStorage with the new array
-        input.value = ''; // Clear the input field
-        input.focus(); // Set the focus back to the input field
+    // Ensure the input field is not empty
+    if (input.value.trim() !== '') {
+        // Create a new list item (li)
+        const li = document.createElement('li');
+        li.textContent = input.value; // Set the text of the list item to the input value
+
+        // Create a delete button
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = '❌'; // Set the button text to a cross symbol
+        deleteButton.classList.add('delete'); // Add a class for styling
+
+        // Append the delete button to the list item
+        li.appendChild(deleteButton);
+
+        // Append the list item to the list
+        list.appendChild(li);
+
+        // Add an event listener to the delete button
+        deleteButton.addEventListener('click', () => {
+            list.removeChild(li); // Remove the list item from the list
+        });
+
+        // Clear the input field and set focus back to it
+        input.value = '';
+        input.focus();
     } else {
-        alert('Please enter a book and chapter.'); // Notify user if input is empty
+        // Show an alert if the input is empty
+        alert('Please enter a book and chapter.');
         input.focus();
     }
 });
-
-// Function to display each chapter in the list
-function displayList(item) {
-    let li = document.createElement('li'); // Create a new list item
-    let deleteButton = document.createElement('button'); // Create a delete button
-    li.textContent = item; // Set the text of the list item to the chapter name
-    deleteButton.textContent = '❌'; // Set the delete button's text
-    deleteButton.classList.add('delete'); // Add CSS class for styling the delete button
-    li.append(deleteButton); // Append the delete button to the list item
-    list.append(li); // Append the list item to the list
-
-    // Event listener for the delete button to remove a chapter from the list
-    deleteButton.addEventListener('click', function () {
-        list.removeChild(li); // Remove the list item from the DOM
-        deleteChapter(li.textContent); // Remove the chapter from the array and localStorage
-        input.focus(); // Set the focus back to the input field
-    });
-}
-
-// Function to update localStorage with the latest chaptersArray
-function setChapterList() {
-    localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray)); // Store the array as a string in localStorage
-}
-
-// Function to retrieve the chapter list from localStorage
-function getChapterList() {
-    return JSON.parse(localStorage.getItem('myFavBOMList')); // Parse the stored JSON string and return the array
-}
-
-// Function to delete a chapter from the chaptersArray and update localStorage
-function deleteChapter(chapter) {
-    chapter = chapter.slice(0, chapter.length - 1); // Remove the '❌' character from the chapter name
-    chaptersArray = chaptersArray.filter((item) => item !== chapter); // Filter out the deleted chapter from the array
-    setChapterList(); // Update localStorage with the modified array
-}

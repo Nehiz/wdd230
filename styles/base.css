@@ -55,14 +55,13 @@ header {
 header img {
     margin-right: 1rem;
     width: 75px;
-    height: 100px;
+    height: auto;
 }
 
 header span {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
 
 nav {
     width: 100%;

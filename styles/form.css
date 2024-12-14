@@ -1,194 +1,156 @@
-/* Root Variables */
+
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #ecf0f1;
-    --button-color: #2980b9;
-    --error-color: #e74c3c;
+    --primary-color: #2c3e50; /* Dark Blue */
+    --secondary-color: #f8f9fa; /* Light Gray - increased lightness */
+    --accent-color: #005a8d; /* Darker Blue for better contrast */
+    --input-border-color: #4a4a4a; /* Dark Gray */
+    --button-text-color: #ffffff; /* White */
+    --spacing: 1.5rem;
+    --font-size-base: 16px;
 }
 
-body {
-    font-family: Arial, sans-serif;
+
+* {         /* General Reset */
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    box-sizing: border-box;
 }
 
-/* Header Styling */
-header {
+
+body {          /* Body Styling */
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0;
+}
+
+
+header.profile {        /* Header Section */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1f456e;
-    padding: 1rem;
-    color: #f8f8f8;
+    padding: var(--spacing);
+    background-color: var(--accent-color);
+    color: #fff;
 }
 
-header img {
+header.profile img {
     margin-right: 1rem;
     width: 75px;
-    height: 100px;
+    height: auto;
 }
 
-header span {
+header .name {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-/* Navigation Styling */
+
 nav {
-    width: 100%;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;  /* Adjust for spacing between items */
-    padding: 0.5rem;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    position: relative;
 }
 
 #hamburger {
-    display: none;
+    display: none; /* Hidden by default for large screens */
     background: none;
     border: none;
     font-size: 2rem;
-    color: #fff;
+    color: var(--secondary-color);
     cursor: pointer;
+    z-index: 101; /* Ensure it's above other elements */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+
+
+#nav-list.show {
+    display: flex; /* Show the nav list */
 }
 
-nav ul li {
-    text-align: center;
-    width: auto;
-}
-
-nav ul li a {
-    padding: 0.5rem 1rem;
-    color: #fff;
+#nav-list a {
     text-decoration: none;
-    font-size: 1.2rem;
-    display: block;
+    color: #fff;
+    font-weight: 700; /* Makes the text bolder */
+    font-size: 1.1rem; /* Increases the font size slightly */
+    transition: color 0.3s;
 }
 
-nav ul li:hover,
-nav ul li.active {
-    background-color: #4d2703;
-    font-weight: bold;
+#nav-list a:hover,
+#nav-list .active a {
+    color: var(--accent-color);
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 600px) {
-    #hamburger {
-        display: block; /* Show hamburger icon on mobile */
-    }
 
-    nav ul {
-        display: none; /* Hide menu by default */
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul li {
-        width: 100%;
-    }
-
-    nav ul.active {
-        display: flex; /* Show menu when hamburger is active */
-    }
-}
-
-/* On larger screens */
-@media (min-width: 601px) {
-    #hamburger {
-        display: none;  /* Hide hamburger on larger screens */
-    }
-
-    nav ul {
-        display: flex;  /* Always show menu on large screens */
-    }
-}
-
-/* Main Content Styling */
 main {
-    padding: 2em;
+    padding: var(--spacing);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 form {
-    background: #fff;
-    padding: 2em;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: var(--input-border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
+    max-width: 500px; /* Limits form width */
 }
 
-label {
+form label {
     display: block;
-    margin-top: 1em;
-    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
 }
 
-input, button {
+form input,
+form button {
     width: 100%;
-    padding: 0.5em;
-    margin-top: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #555;
+    border-radius: var(--input-border-radius);
+    font-size: 1rem;
+    background-color: #f9f9f9; /* Slightly darker background */
+    color: #333;
 }
 
-input:focus {
-    outline: none;
-    border-color: var(--button-color);
-}
-
-button {
-    background-color: var(--button-color);
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
+form input:focus {
+    outline: 2px solid var(--accent-color);
     border: none;
-    margin-top: 1em;
 }
 
-button:hover {
-    background-color: #1f6690;
+button[type="submit"] {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
 }
 
-/* Range Value Display */
-#rating-value {
-    font-weight: bold;
-    color: var(--primary-color);
+button[type="submit"]:hover {
+    background-color: var(--primary-color);
 }
 
-/* Error Message */
 .error-message {
-    color: var(--error-color);
-    font-size: 0.9em;
-    margin-top: 0.5em;
+    color: red;
+    font-size: 0.875rem;
 }
 
-/* Footer Styling */
+
 footer {
-    background-color: #1f456e;
-    color: #f8f8f8;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem 0;
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 footer p {
-    display: flex;
-    flex-direction: column;
     margin: 0.5rem 0;
-    font-size: 1rem;
 }
 
 footer #copyright {
@@ -203,4 +165,99 @@ footer #lastModification {
 
 footer span.name::after {
     content: " 🦄";
+}
+
+@media screen and (max-width: 768px) {
+    /* Hamburger Button */
+    #hamburger {
+        display: block;
+    }
+
+    /* Nav List (hidden by default) */
+    #nav-list {
+        display: none; /* Hidden initially */
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: relative; /* Removes overlay issue */
+        width: 100%;
+        text-align: center;
+        z-index: 100;
+    }
+
+    /* Show Nav List when Active */
+    #nav-list.show {
+        display: flex;
+        position: relative; /* Pushes form content down */
+    }
+
+    #nav-list li {
+        margin: 1rem 0; /* Spacing between items */
+    }
+
+    main {
+        margin-top: 1rem; /* Adds spacing to avoid overlap */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Hide Hamburger */
+    #hamburger {
+        display: none;
+    }
+
+    /* Desktop Nav Layout */
+    #nav-list {
+        display: flex; /* Horizontal layout */
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem; /* Spacing between links */
+        list-style: none;
+    }
+
+    #nav-list a {
+        font-size: 1.2rem; /* Larger font size */
+        font-weight: bold; /* Bold text */
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    #nav-list a:hover {
+        color: var(--accent-color); /* Accent color on hover */
+    }
+}
+
+
+main.confirmation {
+    text-align: center;
+    background-color: #ffffff; /* White */
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #e0e6ed; /* Light Grey Border */
+}
+
+main.confirmation p {
+    font-size: 1.2rem;
+    color: #2d3e50; /* Dark Blue */
+    margin-bottom: 1.5rem;
+}
+
+main.confirmation a {
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    background-color: #005b7f; /* Light Blue */
+    color: #ffffff; /* White */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+main.confirmation a:hover {
+    background-color: #1e88e5; /* Slightly darker blue */
 }

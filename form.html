@@ -15,6 +15,7 @@
     <meta property="og:url" content="https://nehiz.github.io/wdd230/">
 
     <!-- Stylesheets and Fonts --> 
+     
     <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="images/nehis.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,10 +34,10 @@
     <nav>
         <button id="hamburger" aria-expanded="false">☰</button>
         <ul id="nav-list">
-            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="#form">Form</a></li>
+            <li class="active"><a href="form.html">Form</a></li>
         </ul>
     </nav>
     <!-- Main Content -->
@@ -45,7 +46,7 @@
             <!-- Username -->
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-
+        
             <!-- Password -->
             <label for="password">Password:</label>
             <input 
@@ -64,7 +65,7 @@
                 name="confirm-password" 
                 required>
             <span id="password-error" class="error-message"></span>
-
+        
             <!-- Email -->
             <label for="email">BYU Email:</label>
             <input 
@@ -74,7 +75,7 @@
                 pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" 
                 title="Please enter a valid byui.edu email address." 
                 required>
-
+        
             <!-- Page Rating -->
             <label for="rating">Page Rating:</label>
             <input 
@@ -85,8 +86,8 @@
                 max="10" 
                 step="1" 
                 oninput="document.getElementById('rating-value').textContent = this.value;">
-            <span id="rating-value">5</span> <!-- Default display value -->
-
+            <span id="rating-value">5</span>
+        
             <!-- Submit Button -->
             <button type="submit">Submit</button>
         </form>
@@ -103,10 +104,8 @@
         </p>
     </footer>
 
-    <script src="scripts/form.js"></script>
+    <script src="scripts/formPasswordEmail.js"></script>
+    <script src="scripts/formHamburgerMenu.js"></script>
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/hamburgerMenu.js"></script>
-    <script src="scripts/darkMode.js"></script>
-    <script src="scripts/pageVisitCounter.js"></script>
 </body>
 </html>

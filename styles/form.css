@@ -1,0 +1,206 @@
+/* Root Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #ecf0f1;
+    --button-color: #2980b9;
+    --error-color: #e74c3c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f456e;
+    padding: 1rem;
+    color: #f8f8f8;
+}
+
+header img {
+    margin-right: 1rem;
+    width: 75px;
+    height: 100px;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Styling */
+nav {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Adjust for spacing between items */
+    padding: 0.5rem;
+}
+
+#hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: auto;
+}
+
+nav ul li a {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+}
+
+nav ul li:hover,
+nav ul li.active {
+    background-color: #4d2703;
+    font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    #hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    nav ul {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu when hamburger is active */
+    }
+}
+
+/* On larger screens */
+@media (min-width: 601px) {
+    #hamburger {
+        display: none;  /* Hide hamburger on larger screens */
+    }
+
+    nav ul {
+        display: flex;  /* Always show menu on large screens */
+    }
+}
+
+/* Main Content Styling */
+main {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background: #fff;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+input, button {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--button-color);
+}
+
+button {
+    background-color: var(--button-color);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: #1f6690;
+}
+
+/* Range Value Display */
+#rating-value {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Error Message */
+.error-message {
+    color: var(--error-color);
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1f456e;
+    color: #f8f8f8;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+footer #copyright {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+footer #lastModification {
+    margin-top: 0.5rem;
+    color: #FFD700;
+}
+
+footer span.name::after {
+    content: " 🦄";
+}

@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+ 
+  table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+
+  .main-header {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  thead tr:nth-child(2) th:not(:first-child) {
+    background-color: #d3d3d3; /* Light grey */
+    color: black;
+    font-weight: bold;
+  }
+
+  tbody th {  /* First Column Styling: Ensure "Feature 1, Feature 2, etc." has proper alignment */
+    background-color: #f2f2f2; /* Light grey for features */
+    color: black;
+    font-weight: bold;
+    text-align: left;
+  }
+
+
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light gray */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #fff;
+  }
+  
+
+  tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+
+  caption {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 10px;
+    color: #555;
+  }
+  

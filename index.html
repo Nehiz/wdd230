@@ -68,28 +68,20 @@
         <!-- Learning Activities Section -->
         <section class="card">
             <h2>Learning Activities</h2>
-            <ul>
-                <li>Week 01: <a href="index.html">Layout | Media Queries | JS Pen</a></li>
-                <li>Week 02: <a href="week02/design.html"> Design Principles</a> |
-                    <a href="https://codepen.io/Nehiz/pen/MYgwwya" target="_blank">CodePen</a> |
-                    <a href="week02/bom.html">Book of Mormon Top 10 Application</a></li>
-                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> |
-                    <a href="week03/lazyload.html">Lazyloading </a> | 
-                    <a href="week03/responsive-images.html">Responsive Images</a> |
-                    <a href="week03/bom.html">localStorage (BOM)</a></li>
-                    <li>Week 04: <a href="https://codepen.io/Nehiz/pen/GgKrgjG" target="_blank">CSS Pseudo-Classes |</a>
-                    <a href="images/css-comninators.png">CSS-Combinators</a> |</li>
-                    <li>Week 05: <a href="#"></a></li>
-                    <li>Week 06: <a href="#"></a></li>
-            </ul>
+            <ul></ul> <!-- The JavaScript will now populate this list dynamically -->
         </section>
 
         <!-- Information Section -->
         <section class="card">
             <h2>Information</h2>
-            <p><strong>Benin City</strong>: Sunny, 28°C</p>
-            <img src="images/sunny-icon.webp" alt="Sunny" style="width: 50px;">
-            <p>Page Visits: <span id="visit-counter">0</span></p>
+            <div id="weather">
+                <p>
+                    <img id="weather-icon" src="" alt="Weather Icon" />
+                    <span id="temp">--</span>°C - 
+                    <span id="condition">--</span>
+                </p>
+                <p>Visit Count: <span id="visit-count">0</span></p>
+              </div>
         </section>
 
     </main>
@@ -121,6 +113,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
-    <script src="scripts/pageVisitCounter.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>

@@ -661,11 +661,6 @@
         }
     }
 
-    .weather {
-        background-color: #b0c4de; 
-    }
-
-
     .weather-events {
         display: flex;
         justify-content: space-between;
@@ -674,7 +669,7 @@
     }
 
     .events {
-        width: 66.666%; 
+        width: 60%; 
         background-color: #f0f0f0; 
         padding: 2rem;
         border-radius: 0.5rem;
@@ -682,7 +677,7 @@
     }
 
     .weather {
-        width: 33.333%; 
+        width: 40%; 
         background-color: #e0e0e0; 
         padding: 2rem;
         border-radius: 0.5rem; 
@@ -710,6 +705,36 @@
         color: #333;
     }
 
+    .weather-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .weather-info img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+    
+    .weather-info p {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .weather-card p {
+        margin: 0.5rem 0;
+        font-size: 1.2rem;
+        color: #333;
+    }
+    
+    #visit-counter {
+        font-weight: bold;
+        color: #1f456e;
+    }
+    
 
     .events h3 {
         font-size: 1.8rem;

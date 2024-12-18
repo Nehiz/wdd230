@@ -1,0 +1,40 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          { "url": "week01/holygrail.html", "title": "HG Layout" },
+          { "url": "week01/media-query.html", "title": "Media Queries" }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          { "url": "week02/design.html", "title": "Design Principles" },
+          { "url": "https://codepen.io/Nehiz/pen/MYgwwya", "title": "CodePen Project" }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          { "url": "week03/lazyload.html", "title": "Lazyloading" },
+          { "url": "week03/responsive-images.html", "title": "Responsive Images" }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          { "url": "week04/tablebuild.html", "title": "HTML Tables" },
+          { "url": "images/css-comninators.png", "title": "CSS Combinators" }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          { "url": "#", "title": "Placeholder 1" },
+          { "url": "#", "title": "Placeholder 2" }
+        ]
+      }
+    ]
+  }
+  

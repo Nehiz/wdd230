@@ -223,8 +223,10 @@ main h1::after {
 
 .card {
     background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 .card h2 {
@@ -234,13 +236,15 @@ main h1::after {
     background-color: #1f456e;
     color: #fff;
     margin-bottom: 0.5rem;
-    border-radius: 4px 4px 0 0;
-    padding: 0.5rem;
+    border-radius: 8px 8px 0 0;
+    padding: 10px 0;
 }
 
 .card p {
-    margin: 1rem 0;
+    padding: 0.5rem;
     text-align: center;
+    font-size: 1rem 0;
+    margin: 5px 0;
 }
 
 .card ul {
@@ -263,14 +267,12 @@ main h1::after {
     color: #c47f3d;
 }
 
-.card img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.5rem 0.5rem 0 0;
-}
-
+  #weather img {
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
 .google-map {
     position: relative;
     background-color: #121212;

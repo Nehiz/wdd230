@@ -120,10 +120,17 @@
                             <img src="images/ovia-waterside.webp" alt="Ovia Waterside" loading="lazy" width="322" height="156">
                     </section>
                     <section class="sidebar-section">
-                        <h3>Local Weather</h3>
-                        <p><strong>Benin City</strong>: Sunny, 28°C</p>
-                        <img src="images/sunny-icon.webp" alt="Sunny" style="width: 50px;">
-                        <p>Page Visits: <span id="visit-counter">0</span></p>
+                        <div class="weather-card">
+                            <h3>Current Weather</h3>
+                            <div class="weather-info">
+                                <img id="weather-icon" src="" alt="Weather Icon" />
+                                <p>
+                                    <span id="temp">--</span>°C - 
+                                    <span id="condition">--</span>
+                                </p>
+                            </div>
+                            <p>Page Visits: <span id="visit-counter">0</span></p>
+                        </div>
                     </section>
                     <section id="calendar-section" class="sidebar-section">
                         <h3>Schedule Your Events</h3>
@@ -186,17 +193,20 @@
     
         <footer>
             <p>Contact us: info@beninchamber.org | +234 800 123 4567</p>
-            <p>Project by Nehikhare Efehi for WDD 230 |</p>
+            <p>
+                Project by Nehikhare Efehi for WDD 230 | 
+                <span id="year"></span>
+            </p>
             <p id="lastModification">
                 <strong>Last Updated: <span id="date"></span></strong>
             </p>
         </footer>
         
         <script src="scripts/chamber.js"></script>
-        <script src="scripts/getDates.js"></script>
+        <script src="/scripts/getDates.js"></script>
         <script src="scripts/hamburgerMenu.js"></script>
         <script src="scripts/visitMessage.js"></script>
-        <script src="/scripts/pageVisitCounter.js"></script>
+        <script src="scripts/weather-pageTracker.js"></script>
     </body>
     </html>
     

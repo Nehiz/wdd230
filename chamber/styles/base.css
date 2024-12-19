@@ -1100,8 +1100,8 @@
         }
     }
 
-    /* Styles for Directory Page */
-#view-toggle {
+   
+#view-toggle {       /* Styles for Directory Page */
     margin: 1rem 0;
     text-align: center;
 }
@@ -1110,41 +1110,163 @@
     margin: 0 5px;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    border: 1px solid #0056b3;
+    background-color: white;
+    color: #0056b3;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 #view-toggle button.active {
-    background-color: #007BFF;
+    background-color:  #0056b3;
     color: white;
     border: none;
 }
 
 
-#directory-container {      /* Directory Container Styles */
+#directory-container.grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
 }
 
-.member {
+
+#directory-container.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.member-card, .member-list-item {
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 5px;
     background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.member-card {
     text-align: center;
 }
 
-.member img {
-    max-width: 100px;
+.member-card img {
+    max-width: 100%;
     height: auto;
+    border-radius: 5px;
     margin-bottom: 1rem;
 }
 
-.member.list {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.member-card:hover {
+    transform: scale(1.05); /* Scales up the card by 5% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a more prominent shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the effect */
 }
 
-.member.list img {
-    max-width: 50px;
+
+#directory-container.list-view .member-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
 }
+
+#directory-container.list-view .member-list-item img {
+    max-width: 75px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+#directory-container.list-view .member-list-item h3 {
+    margin: 0;
+    flex: 2;
+    text-align: left;
+}
+
+#directory-container.list-view .member-list-item p {
+    margin: 0;
+    flex: 3;
+    text-align: left;
+}
+
+#directory-container.list-view .member-list-item a {
+    flex: 2;
+    text-align: right;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#directory-container.list-view .membership-level {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.membership-level {
+    font-weight: bold;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+.membership-level.gold {
+    color: #5A3E02; 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 1rem;
+}
+
+
+.membership-level.silver {
+    color: #4F4F4F; 
+    font-size: 18px; 
+    font-weight: bold;
+    padding: 1rem;
+}
+
+
+.membership-level.bronze {
+    color: #734A2E;
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 1rem;
+}
+
+
+@media screen and (max-width: 768px) { 
+    #directory-container.list-view .member-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #directory-container.list-view .member-list-item img {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    #directory-container.list-view .member-list-item h3,
+    #directory-container.list-view .member-list-item p,
+    #directory-container.list-view .member-list-item a {
+        flex: 100%;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    #directory-container.list-view .membership-level {
+        text-align: left;
+    }
+}
+
+#view-toggle button:hover {
+    background-color: #004494; 
+    color: white; 
+}
+
+#view-toggle button.active:hover {
+    background-color: #003366; 
+}
+
+

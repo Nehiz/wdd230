@@ -31,7 +31,7 @@
         "address": "33 Silicon Valley Road, Ikeja, Lagos, Nigeria",
         "phone": "+234 909 654 3210",
         "website": "https://www.digitaledgetech.com",
-        "image": "images/digital.webp",
+        "image": "images/digital-edge.webp",
         "membership": "Gold",
         "description": "Empowering Businesses Through Digital Transformation."
     },
@@ -40,7 +40,7 @@
         "address": "12 Fresh Farm Lane, Asaba, Delta State, Nigeria",
         "phone": "+234 802 567 8910",
         "website": "https://www.freshharvestfoods.com",
-        "image": "images/freshharvest.webp",
+        "image": "images/fresh-harvest.webp",
         "membership": "Silver",
         "description": "Delivering Farm-Fresh Produce Directly to Your Doorstep."
     },
@@ -49,16 +49,16 @@
         "address": "8 Royal Palace Drive, Benin City, Nigeria",
         "phone": "+234 814 789 6543",
         "website": "https://www.beninheritagetours.com",
-        "image": "images/heritage.webp",
+        "image": "images/heritage-tours.webp",
         "membership": "Bronze",
         "description": "Connecting You to the Rich History of Benin City."
     },
     {
-        "name": "Benin Heritage Tours",
+        "name": "Edo Boy Kitchen",
         "address": "8 Royal Palace Drive, Benin City, Nigeria",
         "phone": "+234 814 789 6543",
-        "website": "https://www.beninheritagetours.com",
-        "image": "images/heritage.webp",
+        "website": "https://www.edoboykitchen.com",
+        "image": "images/kitchen.webp",
         "membership": "Bronze",
         "description": "Connecting You to the Rich History of Benin City."
     },
@@ -66,8 +66,8 @@
         "name": "Ogba Zoo Tours",
         "address": "15 , Benin City, Nigeria",
         "phone": "+234 814 789 6543",
-        "website": "https://www.beninheritagetours.com",
-        "image": "images/heritage.webp",
+        "website": "https://www.ogbatours.com",
+        "image": "images/ogba.webp",
         "membership": "Bronze",
         "description": "Connecting You to the Rich History of Benin City."
     },

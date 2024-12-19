@@ -20,7 +20,7 @@
 <body>
     <header class="logo">
         <div class="header-content">
-            <img src="images/chamber-logo.jpeg" alt="Benin Chamber of Commerce Logo" width="75" height="100">
+            <img src="images/chamber-logo.webp" alt="Benin Chamber of Commerce Logo" width="75" height="100">
             <span class="name">Benin Chamber of Commerce</span>
         </div>
         <nav>
@@ -30,11 +30,12 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
             </ul>
         </nav>
+        <!-- Header Newsletter Button -->
         <div class="header-newsletter">
-            <button class="newsletter-button">Join Our Newsletter</button>
+            <button class="newsletter-button" onclick="window.location.href='newsletter.html';">Join Our Newsletter</button>
         </div>
     </header>
 
@@ -48,11 +49,11 @@
                     and community engagement. Join the Benin Chamber of Commerce and be 
                     part of the movement shaping our local economy.
                 </p>
-                <a href="#join" class="cta">Join the Chamber</a>
+                <a href="join.html" class="cta">Join the Chamber</a>
             </div>
 
             <aside class="hero-image">
-                <img src="images/hero-image.jpeg" alt="Benin Chamber of Commerce">
+                <img src="images/hero-image.webp" alt="Benin Chamber of Commerce">
             </aside>
         </section>
 
@@ -75,45 +76,36 @@
                             <span id="condition">--</span>
                         </p>
                     </div>
+                    <h4>3-Day Forecast: </h4>
+                    <ul id="forecast">
+                        <!-- Forecast items will be dynamically injected here -->
+                    </ul>
                     <p>Page Visits: <span id="visit-counter">0</span></p>
                 </div>
             </section>
-            
+        </section>
+
+        <section class="spotlights" id="spotlight-container">
+            <div class="spotlight-item">
+                <img src="${member.image}" alt="${member.name}">
+                <div class="spotlight-text">
+                  <h3>${member.name}</h3>
+                  <p>${member.description}</p>
+                  <p>${member.address}</p>
+                  <a href="${member.website}" target="_blank">Visit Website</a>
+                </div>
+            </div>
             
         </section>
 
-        <section class="spotlights">
-            <div class="spotlight">
-                <div class="spotlight-image">
-                    <img src="images/green6.webp" alt="Business A">
-                    <div class="spotlight-overlay">
-                        <h3>GreenTech Solutions</h3>
-                        <p>Eco-Friendly Innovations for a Sustainable Future.</p>
-                        <a href="#business-a" class="learn-more">Learn More</a>
-                    </div>
-                </div>
+        <!-- Banner for Meet and Greet -->
+        <div class="banner" id="chamberBanner">
+            <div class="banner-content">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m. Don't miss it!</p>
+            <button class="close-btn" onclick="closeBanner()">❌</button>
             </div>
-            <div class="spotlight">
-                <div class="spotlight-image">
-                    <img src="images/fitness.webp" alt="Business B">
-                    <div class="spotlight-overlay">
-                        <h3>Prime Fitness Hub</h3>
-                        <p>Transforming Health, One Workout at a Time.</p>
-                        <a href="#business-b" class="learn-more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="spotlight">
-                <div class="spotlight-image">
-                    <img src="images/art.webp" alt="Business C">
-                    <div class="spotlight-overlay">
-                        <h3>Local Arts & Crafts</h3>
-                        <p>Handmade Creations that Tell a Story.</p>
-                        <a href="#business-c" class="learn-more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+  
     </main>
     <footer>
         <p>Contact us: info@beninchamber.org | +234 800 123 4567</p>
@@ -128,8 +120,11 @@
     
     
     <script src="scripts/weather-pageTracker.js"></script>
+    <script src="scripts/threeDayForecast.js"></script>
     <script src="scripts/chamberHamburger.js"></script>
     <script src="/scripts/getDates.js"></script>
+    <script src="scripts/spotLights.js"></script>
+    <script src="scripts/banner.js"></script>
 
 </body>
 </html>

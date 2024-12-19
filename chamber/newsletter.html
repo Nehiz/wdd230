@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thank you for joining the Benin Chamber of Commerce.">
+    <meta name="description" content="Join the Benin Chamber of Commerce today and unlock opportunities for business growth, networking, and access to valuable resources. Become a member and thrive!">
     <meta name="author" content="Nehikhare Efehi">
     <meta property="og:title" content="Benin Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Areal_view_of_the_ancient_city_of_Benin.jpg/290px-Areal_view_of_the_ancient_city_of_Benin.jpg">
     <meta property="og:url" content="https://beninchamber.org">
-    <title>Thank You for Joining</title>
+    <title>Join the Benin Chamber of Commerce - Membership Form</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -38,12 +38,17 @@
         </div>
     </header>
 
-    <main class="thankyou">
-        <h1>Thank You for Joining the Benin Chamber of Commerce!</h1>
-        <p>Your membership application has been successfully received. We will get in touch with you shortly.</p>
-        <a href="index.html" class="cta">Back to Home</a>
-    </main>
-
+        
+    <!-- Newsletter Subscription Form -->
+    <div class="newsletter-container">
+        <h2>Join Our Newsletter</h2>
+        <p>Stay updated with the latest news and offers. Subscribe to our newsletter!</p>
+        <form id="newsletterForm" action="thank-you.html" method="GET">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+    </div>
+  
     <footer>
         <p>Contact us: info@beninchamber.org | +234 800 123 4567</p>
         <p>
@@ -58,3 +63,5 @@
     <script src="/scripts/getDates.js"></script>
 </body>
 </html>
+
+

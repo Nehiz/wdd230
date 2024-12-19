@@ -19,7 +19,7 @@
 <body>
     <header class="logo">
         <div class="header-content">
-            <img src="images/chamber-logo.jpeg" alt="Benin Chamber of Commerce Logo" width="75" height="100">
+            <img src="images/chamber-logo.webp" alt="Benin Chamber of Commerce Logo" width="75" height="100">
             <span class="name">Benin Chamber of Commerce</span>
         </div>
         <nav>
@@ -27,14 +27,15 @@
             <ul id="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="#directory">Directory</a></li>
-                <li><a href="#join">Join</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="about-us.html">About Us</a></li>
             </ul>
         </nav>
-        <div class="header-newsletter">
-            <button class="newsletter-button">Join Our Newsletter</button>
-        </div>
+        <!-- Header Newsletter Button -->
+      <div class="header-newsletter">
+        <button class="newsletter-button" onclick="window.location.href='newsletter.html';">Join Our Newsletter</button>
+      </div>
     </header>
 
     <div class="join-page">
@@ -133,13 +134,15 @@
     </div>
 
     <footer>
-        <p>Contact us: info@beninchamber.org | +234 800 123 4567</p>
-        <p>Project by Nehikhare Efehi for WDD 230 |</p>
-        <p id="lastModification">
-            <strong>Last Updated: <span id="date"></span></strong>
-        </p>
-    </footer>
-    <script src="scripts/chamber.js"></script>
+      <p>Contact us: info@beninchamber.org | +234 800 123 4567</p>
+      <p>
+          Project by Nehikhare Efehi for WDD 230 | 
+          <span id="year"></span>
+      </p>
+      <p id="lastModification">
+          <strong>Last Updated: <span id="date"></span></strong>
+      </p>
+  </footer>
     <script src="/scripts/getDates.js"></script>
 </body>
 </html>

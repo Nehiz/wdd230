@@ -1172,6 +1172,7 @@
     background-color: #f9f9f9;
     margin-bottom: 0.5rem;
     border-radius: 5px;
+    gap: 1rem;
 }
 
 #directory-container.list-view .member-list-item img {

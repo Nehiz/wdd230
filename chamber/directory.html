@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official site for the Benin Chamber of Commerce. Promoting local businesses and community growth.">
+    <meta name="author" content="Nehikhare Efehi">
+    <meta property="og:title" content="Benin Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Areal_view_of_the_ancient_city_of_Benin.jpg/290px-Areal_view_of_the_ancient_city_of_Benin.jpg">
+    <meta property="og:url" content="https://beninchamber.org">
+    <title>Benin Chamber of Commerce</title>
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header class="logo">
+        <div class="header-content">
+            <img src="images/chamber-logo.jpeg" alt="Benin Chamber of Commerce Logo" width="75" height="100">
+            <span class="name">Benin Chamber of Commerce</span>
+        </div>
+        <nav>
+            <button id="hamburger" aria-expanded="false">☰</button>
+            <ul id="nav-list">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#directory">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-newsletter">
+            <button class="newsletter-button">Join Our Newsletter</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Chamber Directory</h1>
+
+        <!-- Toggle Button for Grid/List View -->
+        <div id="view-toggle">
+            <button id="grid-view" class="active">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+
+        <!-- Directory Container -->
+        <section id="directory-container">
+            <!-- Members will be dynamically populated here via JavaScript -->
+        </section>
+
+    </main>
+    <footer>
+        <p>Contact us: info@beninchamber.org | +234 800 123 4567</p>
+        <p>
+            Project by Nehikhare Efehi for WDD 230 | 
+            <span id="year"></span>
+        </p>
+        <p id="lastModification">
+            <strong>Last Updated: <span id="date"></span></strong>
+        </p>
+    </footer>
+    
+    
+    <script src="scripts/weather-pageTracker.js"></script>
+    <script src="scripts/chamberHamburger.js"></script>
+    <script src="/scripts/getDates.js"></script>
+    <script src="scripts/directory.js"></script>
+
+</body>
+</html>

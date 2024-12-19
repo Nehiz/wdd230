@@ -1099,3 +1099,52 @@
             font-size: 0.9rem;
         }
     }
+
+    /* Styles for Directory Page */
+#view-toggle {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#view-toggle button {
+    margin: 0 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#view-toggle button.active {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+}
+
+
+#directory-container {      /* Directory Container Styles */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.member {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+.member img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.member.list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.member.list img {
+    max-width: 50px;
+}

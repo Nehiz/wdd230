@@ -1,0 +1,83 @@
+[
+    {
+        "name": "GreenTech Solutions",
+        "address": "123 Main Street, Benin City, Nigeria",
+        "phone": "+234 812 345 6789",
+        "website": "https://www.greentechsolutions.com",
+        "image": "images/green6.webp",
+        "membership": "Gold",
+        "description": "Eco-Friendly Innovations for a sustainable future."
+    },
+    {
+        "name": "Prime Fitness Hub",
+        "address": "456 Industrial Avenue, Sapele Road, Benin City, Nigeria",
+        "phone": "+234 803 123 4567",
+        "website": "https://www.primefitnesshub.com",
+        "image": "images/fitness.webp",
+        "membership": "Silver",
+        "description": "Transforming Health, One Workout at a Time."
+    },
+    {
+        "name": "Local Arts and Crafts",
+        "address": "789 Innovation Road, Benin City, Nigeria",
+        "phone": "+234 705 678 1234",
+        "website": "https://www.localartsandcrafts.com",
+        "image": "images/art.webp",
+        "membership": "Bronze",
+        "description": "Handmade Creations that Tells a Story."
+    },
+    {
+        "name": "Digital Edge Technologies",
+        "address": "33 Silicon Valley Road, Ikeja, Lagos, Nigeria",
+        "phone": "+234 909 654 3210",
+        "website": "https://www.digitaledgetech.com",
+        "image": "images/digital.webp",
+        "membership": "Gold",
+        "description": "Empowering Businesses Through Digital Transformation."
+    },
+    {
+        "name": "Fresh Harvest Foods",
+        "address": "12 Fresh Farm Lane, Asaba, Delta State, Nigeria",
+        "phone": "+234 802 567 8910",
+        "website": "https://www.freshharvestfoods.com",
+        "image": "images/freshharvest.webp",
+        "membership": "Silver",
+        "description": "Delivering Farm-Fresh Produce Directly to Your Doorstep."
+    },
+    {
+        "name": "Benin Heritage Tours",
+        "address": "8 Royal Palace Drive, Benin City, Nigeria",
+        "phone": "+234 814 789 6543",
+        "website": "https://www.beninheritagetours.com",
+        "image": "images/heritage.webp",
+        "membership": "Bronze",
+        "description": "Connecting You to the Rich History of Benin City."
+    },
+    {
+        "name": "Benin Heritage Tours",
+        "address": "8 Royal Palace Drive, Benin City, Nigeria",
+        "phone": "+234 814 789 6543",
+        "website": "https://www.beninheritagetours.com",
+        "image": "images/heritage.webp",
+        "membership": "Bronze",
+        "description": "Connecting You to the Rich History of Benin City."
+    },
+    {
+        "name": "Ogba Zoo Tours",
+        "address": "15 , Benin City, Nigeria",
+        "phone": "+234 814 789 6543",
+        "website": "https://www.beninheritagetours.com",
+        "image": "images/heritage.webp",
+        "membership": "Bronze",
+        "description": "Connecting You to the Rich History of Benin City."
+    },
+    {
+        "name": "Modern Interiors & Decor",
+        "address": "50 Style Avenue, Benin City, Nigeria",
+        "phone": "+234 701 345 6780",
+        "website": "https://www.moderninteriors.com",
+        "image": "images/interiors.webp",
+        "membership": "Gold",
+        "description": "Innovative Designs to Transform Your Space."
+    }
+]

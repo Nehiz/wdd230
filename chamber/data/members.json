@@ -70,14 +70,5 @@
         "image": "images/ogba.webp",
         "membership": "Bronze",
         "description": "Connecting You to the Rich History of Benin City."
-    },
-    {
-        "name": "Modern Interiors & Decor",
-        "address": "50 Style Avenue, Benin City, Nigeria",
-        "phone": "+234 701 345 6780",
-        "website": "https://www.moderninteriors.com",
-        "image": "images/interiors.webp",
-        "membership": "Gold",
-        "description": "Innovative Designs to Transform Your Space."
     }
 ]

@@ -16,6 +16,9 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
     }
 
     
@@ -131,8 +134,6 @@
         footer {
             padding: 1.5rem 1rem;
         }
-
-    
     }
 
 
@@ -629,67 +630,66 @@
         }
     }
 
-  /* Spotlight Container */
-/* Spotlight Container */
-.spotlights {
+
+.spotlights {       /* Spotlight Container */
     display: flex;
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap; 
   }
   
-  /* Individual Spotlight Item */
+ 
   .spotlight-item {
-    border: 1px solid #ddd; /* Border for each item */
+    border: 1px solid #ddd; 
     padding: 15px;
-    width: 250px; /* Fixed width for the items */
+    width: 250px; 
     background-color: #f9f9f9;
     border-radius: 8px;
-    text-align: center; /* Center text */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     display: flex;
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column; 
+    align-items: center; 
     transition: all 0.3s ease;
-    margin-bottom: 20px; /* Space between items */
+    margin-bottom: 20px; 
   }
   
-  /* Spotlight Item on Hover */
+  
   .spotlight-item:hover {
-    transform: translateY(-5px); /* Slightly lift the card */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-    cursor: pointer; /* Add a pointer cursor on hover */
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
   }
   
-  /* Spotlight Image */
+ 
   .spotlight-item img {
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 15px; /* Space between image and text */
+    margin-bottom: 15px; 
   }
   
-  /* Title */
+ 
   .spotlight-item h3 {
     margin: 0;
     font-size: 18px;
     color: #333;
     font-weight: bold;
-    margin-bottom: 10px; /* Space between title and description */
+    margin-bottom: 10px; 
   }
   
-  /* Description */
+ 
   .spotlight-item p {
     font-size: 14px;
     margin: 5px 0;
     color: #666;
     line-height: 1.5;
-    margin-bottom: 10px; /* Space between description and link */
+    margin-bottom: 10px; 
   }
   
-  /* Website Link */
+  
   .spotlight-item a {
     color: #0056b3;
     text-decoration: none;
@@ -700,28 +700,28 @@
   
   .spotlight-item a:hover {
     color: #003366;
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
   }
   
-  /* Mobile Styles */
+  
   @media (max-width: 768px) {
     .spotlights {
-      justify-content: center; /* Center the cards on smaller screens */
+      justify-content: center; 
     }
   
     .spotlight-item {
-      width: 100%; /* Full width for smaller screens */
+      width: 100%; 
     }
   }
   
-  /* Banner Styles */
-.banner {
-    display: none; /* Hidden by default */
+ 
+.banner {            /* Banner Styles */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #007bff; /* Blue background */
+    background-color: #007bff; 
     color: white;
     text-align: center;
     padding: 15px;
@@ -730,14 +730,14 @@
     z-index: 1000;
   }
   
-  /* Banner Content */
+  
   .banner .banner-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  /* Close Button Styles */
+  
   .banner .close-btn {
     background: transparent;
     border: none;
@@ -747,11 +747,9 @@
   }
   
   .banner .close-btn:hover {
-    color: #ddd; /* Light hover effect */
+    color: #ddd; 
   }
   
-    
-
     .content-wrapper {          /* Discover page styling*/
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -761,6 +759,12 @@
         width: 100%;
         box-sizing: border-box;
         align-items: stretch; 
+    }
+    
+
+    .sidebar {
+        width: 100%; /* Responsive width */
+        max-width: 300%;
     }
 
     .sidebar, .main-content {
@@ -835,6 +839,33 @@
         border-left: 4px solid #007acc; 
         background-color: #fff; 
     }
+
+   
+@media (max-width: 768px) {   /* Mobile Layout */
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+
+.lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lazy-load.visible {
+    opacity: 1;
+}
 
 
     #visit-message {
@@ -930,7 +961,6 @@
         color: #111;
     }
 
-
     @media (min-width: 768px) { /* Hover Effect for Desktop View */
         .photo-gallery img:hover {
         transform: scale(1.05); /* Zoom effect */
@@ -941,21 +971,22 @@
         }
     }
     
-
     .join-page {        /* Join Page Styles */
-        background-color: #F9F9F9; /* Light background to distinguish from others */
+        background-color: #F9F9F9; 
         padding: 2rem;        
         min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        max-width: 100%;
+        margin: 2rem auto;
     }
 
     .join-page .form-container {             /* Form Container */
-        max-width: 800px;
-        margin: 3rem auto; 
+        max-width: 100%;
+        margin: 2rem auto; 
         padding: 2rem;
-        background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Slight gradient */
+        background: linear-gradient(145deg, #ffffff, #f0f0f0); 
         border: 1px solid #e0e0e0;
         border-radius: 12px;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -969,7 +1000,7 @@
     
     .join-page form input, 
     .join-page form select, 
-    .join-page form textarea {      /* Form Inputs and Textareas */
+    .join-page form textarea {   
         width: 100%;
         padding: 1rem;
         margin-bottom: 1.5rem;
@@ -996,7 +1027,7 @@
     }
 
     .join-page form input[type="submit"], 
-    .thankyou .cta {          /* join page Submit Button and thank you page cta*/
+    .thankyou .cta {          
         padding: 1rem 2rem;         
         background: linear-gradient(145deg, #1f456e, #1c3f62);
         color: white;
@@ -1009,7 +1040,7 @@
         transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     }
     .join-page form input[type="submit"]:hover,
-    .thankyou .cta:hover {          /* join page Submit Button and thank you page cta*/
+    .thankyou .cta:hover {          
         background: linear-gradient(145deg, #f0d99b, #ebc47e);
         color: #1f456e;
         transform: translateY(-3px);
@@ -1026,7 +1057,7 @@
 
 
     .join-page .intro-content {
-        text-align: center;    /* Intro Content */
+        text-align: center;    
         margin-bottom: 2rem;
     }
     .join-page .intro-content h1 {
@@ -1040,7 +1071,7 @@
         color: #555;
     }
 
-    .membership-benefits {          /* General styles for membership benefits */    
+    .membership-benefits {         
         margin: 2rem auto;       
         padding: 1.5rem;
         border-radius: 8px;
@@ -1049,44 +1080,44 @@
     }
     
   
-    .membership-benefits:hover {      /* Hover effect for all sections */
+    .membership-benefits:hover {      
         transform: scale(1.02);     
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
     
     
     .membership-np {
-        background-color: #efe8e8; /* Light gray */
+        background-color: #efe8e8; 
         color: #111;
     }
   
   
-    .membership-bronze {                  /* Bronze Membership */
-        background-color: #e9a057; /* Bronze */
+    .membership-bronze {                  
+        background-color: #e9a057; 
         color: #111;
     }
     
     
-    .membership-silver {                   /* Silver Membership */
-        background-color: #c0c0c0; /* Silver */
+    .membership-silver {                   
+        background-color: #c0c0c0; 
         color: #111;
     }
     
     
-    .membership-gold {                     /* Gold Membership */
-        background-color: #ffd700; /* Gold */
+    .membership-gold {                    
+        background-color: #ffd700; 
         color: #111;
     }
     
     
-    .membership-benefits h3 {         /* Membership section header */
+    .membership-benefits h3 {        
         text-align: center;
         font-size: 1.8rem;
         margin-bottom: 1rem;
     }
     
     
-    .membership-benefits ul {           /* Membership list */
+    .membership-benefits ul {         
         list-style-type: none;
         padding: 0;
     }
@@ -1100,7 +1131,7 @@
     }
     
     @media (max-width: 768px) {
-        .join-page .form-container {          /* Media Queries for Responsiveness */
+        .join-page .form-container {          
             padding: 1.5rem;
         }
         .join-page form input, 
@@ -1310,7 +1341,7 @@
 
 @media (min-width: 1200px) {
     #directory-container.grid-view {
-        grid-template-columns: repeat(4, 1fr); /* 6 cards per row on larger screens */
+        grid-template-columns: repeat(4, 1fr); /* 4 cards per row on larger screens */
     }
 }
 
@@ -1325,6 +1356,38 @@
         grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
     }
 }
+
+@media (max-width: 600px) {
+    #directory-container.grid-view {
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+    
+}
+
+@media screen and (max-width: 768px) { 
+    #directory-container.list-view .member-list-item {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    #directory-container.list-view .member-list-item img {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    #directory-container.list-view .member-list-item h3,
+    #directory-container.list-view .member-list-item p,
+    #directory-container.list-view .member-list-item a {
+        flex: 100%;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    #directory-container.list-view .membership-level {
+        text-align: left;
+    }
+}
+
 
 
 .newsletter-container {     /* Newsletter Container */
